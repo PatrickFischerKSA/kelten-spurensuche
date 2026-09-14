@@ -1,100 +1,99 @@
 const SRF="https://www.srf.ch/play/tv/roemer-in-der-schweiz/video/die-kelten-und-die-roemer?urn=urn:srf:video:3da18acb-1a0a-4cab-97ce-0b0fb3f4f4e4";
 const stations=[
   {
-    "title": "Mythos oder Spur?",
-    "tag": "Das erste Fundstück",
-    "intro": "Im Museum steht: «Die Kelten waren nur wilde Barbaren.» Deine Mission: Prüfe dieses Bild. Sammle an jeder Station Belege für ein genaueres Urteil.",
-    "note": "Die Präsentation startet mit Vorstellungen über Gallier: Dorf, Druide, Zaubertrank und Kampf gegen Rom. Das sind zunächst Bilder im Kopf. Ob sie historisch tragen, muss erst geprüft werden.",
-    "source": "PPP_Kelten (1).pptx, Folien 3–4; Die Kelten.docx, Grundzüge und Religion.",
+    "title": "Wer waren die Helvetier?",
+    "tag": "Eine Spur bis in die Gegenwart",
+    "intro": "Helvetia, helvetisch, Helvetier: Warum begegnet uns dieser Name bis heute? Reise ins Jahr 58 v. Chr. und finde heraus, wer die Helvetier waren, warum sie aufbrachen und wie wir ihre Geschichte erzählen.",
+    "note": "Die Helvetier waren eine keltische Gruppe. Caesar beschreibt ihr Gebiet mit Rhein, Jura, Genfersee und Rhone als Grenzen. Seine Beschreibung ist eine antike Perspektive, keine Karte der heutigen Schweiz. Auf deren Gebiet lebten weitere Gruppen. Die Präsentation zeigt, wie Comics unser Keltenbild prägen; bei den Helvetiern prüfen wir solche Vorstellungen an Quellen.",
+    "source": "Die Kelten.docx, Grundzüge und Caesar-Auszug; PPP_Kelten (1).pptx, Folien 3–4; HLS, Helvetier (Erinnerungskultur).",
     "tasks": [
       {
         "type": "text",
-        "q": "Entlarve den Comic: Was macht die Gallier bei Asterix unbesiegbar?",
+        "q": "Der erste Hinweis lautet «Helvetia». Welche keltische Gruppe steckt hinter diesem Namen?",
         "fields": [
           {
-            "label": "Der erfundene Gegenstand",
+            "label": "Gesucht ist der Name der Gruppe im Plural.",
             "accept": [
-              "Zaubertrank",
-              "magischer Trank",
-              "der Zaubertrank"
+              "Helvetier",
+              "die Helvetier",
+              "Helvetierinnen und Helvetier"
             ]
           }
         ],
-        "why": "Der Zaubertrank ist eine Erfindung der Asterix-Comics. Druiden und befestigte Siedlungen sind dagegen historisch belegt."
+        "why": "Der Name Helvetia greift auf die Helvetier zurück. Die spätere Verwendung des Namens für die Schweiz ist Erinnerungskultur; ein antiker Stamm und die heutige Bevölkerung sind nicht gleichzusetzen."
       },
       {
         "type": "write",
-        "q": "Lege drei Belege gegen das Bild der «nur wilden Krieger» in dein Fundprotokoll.",
+        "q": "Erstelle einen geografischen Steckbrief der Helvetier aus Caesars Beschreibung.",
         "prompts": [
-          "Ein Beleg aus dem Handwerk",
-          "Ein Beleg aus der Wirtschaft",
-          "Was zeigen diese Belege über das Klischee?"
+          "Nenne zwei natürliche Grenzen, die Caesar beschreibt.",
+          "Warum ergibt seine Beschreibung noch keine Karte der heutigen Schweiz?"
         ],
         "criteria": [
-          "Ich nenne ein konkretes Handwerk, etwa Eisenverarbeitung.",
-          "Ich nenne einen wirtschaftlichen Beleg, etwa Münzen oder Fernhandel.",
-          "Ich erkläre, weshalb Krieg nicht die ganze Gesellschaft beschreibt."
+          "Ich nenne zwei passende Grenzen: Rhein, Jura, Genfersee oder Rhone.",
+          "Ich unterscheide ein antikes Siedlungsgebiet von einem heutigen Staat."
         ],
-        "why": "Handwerk, Münzen und Handel zeigen eine vielseitige Gesellschaft. Kriege gab es ebenfalls; sie beschreiben aber nicht das gesamte Leben."
+        "why": "Caesar nennt Rhein, Jura, Genfersee und Rhone. Seine Angaben stammen aus einer antiken Darstellung; heutige Staatsgrenzen und andere damalige Gruppen müssen davon unterschieden werden."
       },
       {
         "type": "write",
-        "q": "Repariere diesen Museumssatz: «Alle Kelten waren Helvetier.»",
+        "q": "Korrigiere das Etikett: «Alle Menschen auf dem Gebiet der heutigen Schweiz waren Helvetier.»",
         "prompts": [
           "Schreibe eine historisch genauere Fassung."
         ],
         "criteria": [
-          "Ich beschreibe die Helvetier als eine keltische Gruppe.",
-          "Ich mache deutlich, dass es weitere keltische Gruppen gab."
+          "Ich benenne die Helvetier als eine keltische Gruppe.",
+          "Ich erwähne mindestens eine weitere damalige Gruppe, etwa Rauriker oder Lepontier."
         ],
         "why": "Die Helvetier gehörten zu den keltischen Gruppen. Auf dem Gebiet der heutigen Schweiz lebten auch andere Gruppen, etwa Rauriker und Lepontier (SRF, 01:02–01:50)."
       }
     ]
   },
   {
-    "title": "Zeitspuren",
-    "tag": "Schicht für Schicht",
-    "intro": "Ein Fund verrät mehr, wenn du seine Zeit kennst. Ordne die grossen Veränderungen der Eisenzeit.",
-    "note": "In der Hallstattzeit wurde Eisen für Geräte und Waffen wichtiger. Ab dem 5. Jahrhundert v. Chr. breitete sich die Latènekultur aus. Später entstanden grosse befestigte Zentren, die Oppida. 58 v. Chr. besiegte Caesar die Helvetier.",
-    "source": "Die Kelten.docx, frühe und späte Eisenzeit; HLS, Latènezeit.",
+    "title": "Aufbruch 58 v. Chr.",
+    "tag": "Auswandern, kämpfen, zurückkehren",
+    "intro": "Die Helvetier verlassen ihr Gebiet. Caesar versperrt den Weg durch die römische Provinz. Rekonstruiere den Verlauf und unterscheide ihn von den umstrittenen Motiven.",
+    "note": "58 v. Chr.: Aufbruch der Helvetier, blockierter Durchzug bei Genf, Umweg durch das Gebiet der Sequaner, Niederlage bei Bibracte und von Caesar verlangte Rückkehr. Caesar verbindet die Vorbereitung mit Orgetorix und schildert das Gebiet als eingeengt. Die tatsächlichen Auswanderungsgründe sind nicht abschliessend geklärt. Hallstatt und Latène bilden den älteren keltischen Hintergrund, erklären diesen Aufbruch aber nicht allein.",
+    "source": "Die Kelten.docx, Caesar-Auszug und Niedergang; HLS, Helvetier, Abschnitte zu 58 v. Chr. und Rückkehr.",
     "tasks": [
       {
         "type": "order",
-        "q": "Bringe die Ereignisse in die Reihenfolge: vom ältesten zum jüngsten.",
+        "q": "Rekonstruiere den Weg der Helvetier im Jahr 58 v. Chr.",
+        "instruction": "Ordne vom Aufbruch bis zur Rückkehr. Die Schritte fassen den Verlauf vereinfacht zusammen.",
         "items": [
-          "Caesar besiegt die Helvetier (58 v. Chr.).",
-          "Eisen gewinnt an Bedeutung (8. Jh. v. Chr.).",
-          "Oppida sind weit verbreitet (spätes 2.–1. Jh. v. Chr.).",
-          "Latènekultur breitet sich aus (ab 5. Jh. v. Chr.)."
+          "Niederlage gegen Caesar bei Bibracte.",
+          "Die Helvetier brechen aus ihrem Siedlungsgebiet auf.",
+          "Caesar verlangt die Rückkehr der Besiegten.",
+          "Der Durchzug bei Genf wird blockiert; der Zug nimmt einen anderen Weg."
         ],
         "answer": [
           1,
           3,
-          2,
-          0
+          0,
+          2
         ],
-        "why": "Bei Jahreszahlen vor Christus liegt die grössere Zahl weiter zurück. Die Reihenfolge lautet: frühe Eisenzeit → Latènekultur → Oppida → 58 v. Chr."
+        "why": "Auf den Aufbruch folgt der blockierte Durchzug. Nach dem weiteren Zug und der Niederlage bei Bibracte müssen die überlebenden Helvetier auf Caesars Anordnung zurückkehren."
       },
       {
         "type": "sort",
-        "q": "Ordne die Merkmale den beiden Kulturen zu.",
+        "q": "Ordne die Notizen: Was steht in Caesars Darstellung, was bleibt eine offene Frage?",
         "items": [
-          "Salzbergbau am namengebenden Ort",
-          "Geometrische Zierformen",
-          "Pflanzliche Motive und verborgene Gesichter",
-          "Benannt nach einem Fundort am Neuenburgersee"
+          "Orgetorix überredet die Helvetier zum Auszug.",
+          "Welche wirtschaftlichen Motive waren entscheidend?",
+          "Natürliche Grenzen engen das Gebiet ein.",
+          "Wie gewichteten die Beteiligten ihre unterschiedlichen Gründe?"
         ],
         "categories": [
-          "Hallstatt",
-          "Latène"
+          "Caesars Darstellung",
+          "Offene Frage"
         ],
         "answer": [
           0,
-          0,
           1,
+          0,
           1
         ],
-        "why": "Hallstatt steht hier für Salzreichtum und geometrische Muster. La Tène gab der späteren Kultur mit oft mehrdeutigen, pflanzlichen und figürlichen Darstellungen ihren Namen."
+        "why": "Der bereitgestellte Caesar-Auszug nennt Orgetorix und natürliche Grenzen. Das macht Caesars Erklärung noch nicht vollständig oder neutral. Die tatsächlichen Motive bleiben Gegenstand der Forschung."
       },
       {
         "type": "number",
@@ -106,15 +105,15 @@ const stations=[
     ]
   },
   {
-    "title": "Das weisse Gold",
-    "tag": "Werkstatt und Handelsplatz",
-    "intro": "Eine Stadt braucht Nahrung, Werkzeuge und Austausch. Verknüpfe die Gegenstände mit ihrer Wirkung.",
-    "note": "Salz machte Lebensmittel haltbarer und war ein begehrtes Handelsgut. Eisenwerkzeuge erleichterten die Landwirtschaft. Drehmühlen halfen bei der Getreideverarbeitung. Münzen und importierte Gefässe weisen auf wirtschaftlichen Austausch hin.",
+    "title": "Alltag im Oppidum",
+    "tag": "Mehr als Caesars Gegner",
+    "intro": "Bevor die Helvetier in Caesars Kriegsbericht auftauchen, leben sie in Siedlungen, arbeiten und handeln. Erschliesse ihren Alltag aus dem keltischen Umfeld – und prüfe, was du wirklich einer bestimmten Gruppe zuordnen kannst.",
+    "note": "Salz machte Lebensmittel haltbarer und war ein begehrtes Handelsgut. Eisenwerkzeuge erleichterten die Landwirtschaft. Drehmühlen halfen bei der Getreideverarbeitung. Münzen und importierte Gefässe weisen auf wirtschaftlichen Austausch hin. Diese Beispiele stammen aus dem allgemeinen Keltentext. Sie erklären den kulturellen Zusammenhang der Helvetier; nicht jeder Gegenstand ist allein an seiner Form als helvetisch erkennbar. Ein Oppidum verband etwa Handwerk, Handel und religiöse Funktionen.",
     "source": "Die Kelten.docx, Hallstatt-Kultur; Wirtschaft und Handel; Oppida.",
     "tasks": [
       {
         "type": "pairs",
-        "q": "Was bewirkt welcher Gegenstand?",
+        "q": "Packe die Alltagskiste: Verbinde Gegenstände aus dem keltischen Umfeld der Helvetier mit ihrer Funktion.",
         "items": [
           "Salz",
           "Eiserne Pflugschar",
@@ -137,20 +136,20 @@ const stations=[
       },
       {
         "type": "write",
-        "q": "Du untersuchst eine importierte Weinamphore aus einem reichen Grab. Trenne Beleg und Überdehnung.",
+        "q": "Ein Museum möchte eine Weinamphore als «typisch helvetisch» beschriften. Prüfe diese Deutung anhand eines gedachten Grabfundes.",
         "prompts": [
-          "Was lässt sich aus dem Fund vorsichtig erschliessen?",
-          "Was lässt sich daraus NICHT über alle Menschen ableiten?"
+          "Was könnte eine importierte Amphore über Kontakte verraten?",
+          "Warum beweist die Amphore allein nicht, dass die bestattete Person helvetisch war?"
         ],
         "criteria": [
           "Ich leite Kontakte oder Zugang zu Importgütern ab.",
-          "Ich erkläre, dass ein reiches Grab nicht den Alltag aller Menschen belegt."
+          "Ich unterscheide die Verbreitung eines Gegenstands von der Zugehörigkeit zu einer Gruppe."
         ],
-        "why": "Ein Importgegenstand belegt Kontakte. Ein einzelnes reiches Grab beweist weder die Herkunft einer Person noch den Alltag der gesamten Bevölkerung."
+        "why": "Importgüter weisen auf Austausch hin. Ähnliche Gegenstände können von mehreren Gruppen benutzt werden; die Zuschreibung «helvetisch» benötigt zusätzlichen Kontext."
       },
       {
         "type": "order",
-        "q": "Baue eine plausible Wirkungskette: Wie konnte bessere Landwirtschaft eine Stadt versorgen?",
+        "q": "Wie liess sich ein Oppidum der Helvetier versorgen? Baue eine plausible Wirkungskette.",
         "instruction": "Ordne von der Voraussetzung zur möglichen Folge. Die Kette ist vereinfacht; eine Stadt entstand nicht automatisch.",
         "items": [
           "Mehr Menschen können ausserhalb der Landwirtschaft arbeiten.",
@@ -169,33 +168,33 @@ const stations=[
     ]
   },
   {
-    "title": "Tatort Bern",
-    "tag": "Der SRF-Videoauftrag",
-    "intro": "Begleite Angela Haas auf die Engehalbinsel und ins Museum. Sieh dir die Ausschnitte an und prüfe, was Funde wirklich verraten.",
+    "title": "Helvetier in Bern",
+    "tag": "Spurensuche auf der Engehalbinsel",
+    "intro": "Unter dem heutigen Wald bei Bern lag eine bedeutende Siedlung. Der SRF-Beitrag führt dich an einen Ort, den er den Helvetiern zuordnet. Entdecke seinen Namen, untersuche die Funde und verfolge das Weiterleben unter Rom.",
     "video": true,
-    "note": "Falls das Video nicht verfügbar ist: Fibeln halten Kleidung zusammen und werden im Film mit Sicherheitsnadeln verglichen. Im Heiligtum wurden unter anderem Tierknochen gefunden; ein gemeinsames Opfermahl ist eine Deutung. Nach der römischen Eroberung lebte die lokale Bevölkerung weiter. Keltische und römische Einflüsse verbanden sich.",
-    "source": "SRF: Die Kelten und die Römer (2024), 02:08–02:31, 07:09–07:39 und 10:31–11:21. Fragen anhand der deutschen Untertitel geprüft.",
+    "note": "Ohne Video: Der Beitrag bezeichnet die Siedlung auf der Engehalbinsel als Brenodurum und ihre Bewohner als Helvetier. Eine befestigte keltische Siedlung heisst Oppidum. Im Heiligtum wurden Bärenknochen gefunden; das vermutete Ritual ist eine Deutung. Unter römischer Herrschaft lebte die Bevölkerung weiter; es entwickelte sich eine gallorömische Kultur.",
+    "source": "SRF: Die Kelten und die Römer (2024), 04:01–04:40, 07:09–07:39 und 10:31–11:21; geprüft anhand der deutschen Untertitel.",
     "tasks": [
       {
         "type": "text",
-        "q": "02:08–02:31 · Ergänze die beiden Begriffe aus der Kleiderwerkstatt.",
+        "q": "04:01–04:40 · Entschlüssle den Fundort auf der Engehalbinsel bei Bern.",
         "fields": [
           {
-            "label": "Die keltische Gewandschliesse heisst …",
+            "label": "Wie nennt der Film diese Siedlung?",
             "accept": [
-              "Fibel",
-              "Fibeln"
+              "Brenodurum",
+              "Brenodor"
             ]
           },
           {
-            "label": "Die Expertin vergleicht sie mit einer heutigen …",
+            "label": "Wie heisst der Fachbegriff für eine befestigte keltische Siedlung?",
             "accept": [
-              "Sicherheitsnadel",
-              "Sicherheitsnadeln"
+              "Oppidum",
+              "ein Oppidum"
             ]
           }
         ],
-        "why": "Die Expertin vergleicht die Fibel mit einer Sicherheitsnadel. Sie hat eine praktische und eine schmückende Funktion."
+        "why": "Der Film nennt Brenodurum eine bedeutende Siedlung der Helvetier. Oppidum ist der lateinische Begriff für eine solche befestigte keltische Siedlung."
       },
       {
         "type": "mark",
@@ -224,7 +223,7 @@ const stations=[
       },
       {
         "type": "text",
-        "q": "10:31–11:21 · Ergänze den Namen der Kultur, die aus keltischen und römischen Einflüssen entstand.",
+        "q": "10:31–11:21 · Die Bevölkerung lebt unter Rom weiter: Wie heisst die Kultur aus keltischen und römischen Einflüssen?",
         "fields": [
           {
             "label": "Es entstand die … Kultur.",
@@ -242,15 +241,15 @@ const stations=[
     ]
   },
   {
-    "title": "Wer erzählt?",
-    "tag": "Das Quellenlabor",
-    "intro": "Caesar kämpfte gegen keltische Gruppen. Diodor schrieb aus griechischer Perspektive. Wie verändert ihr Blick die Geschichte?",
-    "note": "Diodor schildert unter anderem Goldschmuck und religiöse Scheu, verbindet das aber mit pauschalen Urteilen über die Kelten. Caesar stellt Tapferkeit und kriegerische Bedrohung heraus. Felix Müller betont die Aussenperspektive antiker Texte und die Deutungsgrenzen archäologischer Funde.",
+    "title": "Caesars Helvetierbild",
+    "tag": "Den Sieger befragen",
+    "intro": "Über den Auszug der Helvetier berichtet ausgerechnet ihr Gegner Caesar. Untersuche seinen Blick: Welche Informationen liefert er, welche Interessen könnten mitsprechen und welche Belege brauchst du zusätzlich?",
+    "note": "Im bereitgestellten Auszug beschreibt Caesar die Helvetier als besonders tapfer und Orgetorix als ehrgeizigen Anführer. Er ist zugleich römischer Feldherr und Autor. Diodors allgemeine Keltenbeschreibung bietet einen Vergleich, keine eigenständige Bestätigung jedes Details über Helvetier. Müller warnt davor, archäologische Verbreitungsmuster direkt mit Stammesgrenzen gleichzusetzen.",
     "source": "Die Kelten.docx, ergänzende Texte von Diodor, Caesar und Felix Müller (2012). Zusammenfassungen, keine wörtlichen Zitate.",
     "tasks": [
       {
         "type": "write",
-        "q": "Du interviewst Caesar. Stelle eine kritische Frage zu seiner Darstellung der besonders tapferen Gegner.",
+        "q": "Du interviewst Caesar über die Helvetier. Hinterfrage seine Darstellung der besonders tapferen Gegner.",
         "prompts": [
           "Deine Frage an Caesar",
           "Warum ist diese Frage für die Bewertung seiner Darstellung wichtig?"
@@ -264,7 +263,7 @@ const stations=[
       },
       {
         "type": "pairs",
-        "q": "Verbinde die Werkzeuge der Quellenkritik mit der passenden Untersuchungsfrage.",
+        "q": "Prüfe Caesars Helvetierbericht: Verbinde jedes Werkzeug mit seiner Untersuchungsfrage.",
         "items": [
           "Urheberschaft",
           "Sprache",
@@ -287,7 +286,7 @@ const stations=[
       },
       {
         "type": "write",
-        "q": "Gleicher Schmuck, gleicher Stamm? Entwirf zwei unterschiedliche Erklärungen für ähnliche Schmuckfunde.",
+        "q": "Helvetier oder Nachbarn? Entwickle zwei Erklärungen dafür, dass ähnlicher Schmuck in mehreren Gebieten gefunden wird.",
         "prompts": [
           "Erklärung 1",
           "Erklärung 2",
@@ -303,52 +302,53 @@ const stations=[
     ]
   },
   {
-    "title": "Dein Museumsurteil",
-    "tag": "Die letzte Vitrine",
-    "intro": "Du hast die Spuren gesammelt. Jetzt entsteht aus dem Klischee ein begründetes Geschichtsbild.",
-    "note": "Druiden waren unter anderem Priester, Richter und Lehrer. Keltische Kunst kann mehrdeutig sein. Der Begriff «Hochkultur» arbeitet mit Kriterien wie Städten, Arbeitsteilung und Schrift, ist aber umstritten, wenn daraus eine Rangordnung menschlicher Kulturen gemacht wird.",
-    "source": "Die Kelten.docx, Religion und Mythen; Müller; Arbeitsaufträge 10–12. Einordnung des Hochkulturbegriffs: didaktische Ergänzung. HLS, Kelten (Schriftgebrauch).",
+    "title": "Von Helvetiern zu Helvetia",
+    "tag": "Geschichte wird Erinnerung",
+    "intro": "Aus dem Namen der Helvetier wurde später ein Symbol für die Schweiz. Was verbindet die beiden – und wo darf man Vergangenheit und Gegenwart nicht gleichsetzen? Gestalte das Schlussstück der Ausstellung.",
+    "note": "Helvetia ist eine spätere Symbolfigur der Schweiz. Der Bezug auf die Helvetier stiftete Zugehörigkeit, bildet aber nicht die gesamte antike Bevölkerung ab. Die Helvetier waren weder die einzigen damaligen Bewohner noch Bürger eines heutigen Schweizer Staates. Schriftgebrauch ist ebenfalls differenziert zu betrachten: Inschriften und Caesars Bericht über beschriftete Verzeichnisse sind nicht dasselbe wie erhaltene eigene Geschichtswerke.",
+    "source": "HLS, Helvetier, Erinnerungskultur und Schriftzeugnisse; Die Kelten.docx, Müller-Auszug; SRF, Museumsteil.",
     "tasks": [
       {
         "type": "letters",
-        "q": "Entschlüssle den Begriff: Wer leitete Kulte und wirkte auch als Richter und Lehrer?",
+        "q": "Setze den Namen der späteren Symbolfigur der Schweiz zusammen, der an die Helvetier erinnert.",
         "letters": [
-          "D",
-          "R",
-          "N",
-          "U",
+          "V",
           "E",
+          "H",
+          "A",
+          "L",
           "I",
-          "D"
+          "T",
+          "E"
         ],
-        "answer": "DRUIDEN",
-        "why": "Druiden werden als Priester, Richter, Gelehrte und Lehrer beschrieben. Der Zaubertrank gehört zur Comicwelt."
+        "answer": "HELVETIA",
+        "why": "Helvetia greift den Namen der Helvetier auf. Sie ist eine spätere Symbolfigur, keine historisch belegte Anführerin des Auszugs von 58 v. Chr."
       },
       {
         "type": "write",
-        "q": "Widerspruch auflösen: Es gibt Inschriften, aber kaum eigene erhaltene Geschichtswerke. Erkläre den Unterschied.",
+        "q": "Caesar berichtet von beschrifteten Verzeichnissen der Auswanderer. Was zeigt das – und was fehlt für eine eigene Geschichtsschreibung der Helvetier?",
         "prompts": [
-          "Was belegt eine Inschrift?",
-          "Was wäre darüber hinaus eine eigene Geschichtsschreibung?"
+          "Was würde ein solches Verzeichnis über Schriftgebrauch aussagen?",
+          "Warum ersetzt es keinen eigenen Bericht der Helvetier über den Auszug?"
         ],
         "criteria": [
-          "Ich unterscheide Schreiben von zusammenhängenden Berichten über vergangene Ereignisse.",
-          "Ich leite aus fehlenden Geschichtswerken weder völlige Schriftlosigkeit noch kulturelle Minderwertigkeit ab."
+          "Ich unterscheide eine Liste von einer zusammenhängenden Geschichtserzählung.",
+          "Ich beachte, dass wir hier Caesars Bericht über Verzeichnisse lesen."
         ],
-        "why": "Schriftgebrauch und Geschichtsschreibung sind verschiedene Dinge. Inschriften und Berichte über Schriftgebrauch sind bekannt. Das Fehlen eigener erhaltener Geschichtswerke ist kein Werturteil über eine Kultur."
+        "why": "Eine Liste ist ein Hinweis auf praktischen Schriftgebrauch. Sie erzählt nicht automatisch die Geschichte des Auszugs aus helvetischer Sicht; zudem prüfen wir hier eine Aussage Caesars."
       },
       {
         "type": "write",
-        "q": "Schreibe das neue Schild für die Museumsvitrine: Waren die Kelten «nur wilde Barbaren»?",
+        "q": "Schreibe das neue Museumsschild: «Die Helvetier – mehr als Caesars Gegner». Was sollten Besucherinnen und Besucher mitnehmen?",
         "prompts": [
           "Dein Ausstellungstext in 3–5 Sätzen"
         ],
         "criteria": [
-          "Ich nenne zwei konkrete Belege, etwa Handwerk, Münzen, Handel oder Oppida.",
-          "Ich erwähne eine Grenze unseres Wissens.",
-          "Ich vermeide Verallgemeinerungen über alle keltischen Gruppen."
+          "Ich nenne zwei konkrete Aspekte: etwa Bern-Enge, Alltag, Auszug, Bibracte oder Rückkehr.",
+          "Ich benenne die Perspektive Caesars oder eine andere Grenze unseres Wissens.",
+          "Ich setze Helvetier nicht mit allen Kelten oder der gesamten heutigen Schweizer Bevölkerung gleich."
         ],
-        "why": "Ein begründetes Urteil berücksichtigt Vielfalt, wirtschaftliche Leistungen und Konflikte ebenso wie die Grenzen unserer Quellen."
+        "why": "Ein differenziertes Helvetierbild verbindet Lebenswelt, Auszug und Begegnung mit Rom. Es prüft Caesars Sicht und unterscheidet antike Gruppen von späterer nationaler Erinnerung."
       }
     ]
   }
