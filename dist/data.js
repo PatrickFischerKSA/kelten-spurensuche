@@ -1,9 +1,9 @@
 const SRF="https://www.srf.ch/play/tv/roemer-in-der-schweiz/video/die-kelten-und-die-roemer?urn=urn:srf:video:3da18acb-1a0a-4cab-97ce-0b0fb3f4f4e4";
 const stations=[
   {
-    "title": "Unter der Oberfläche",
-    "tag": "LA TÈNE · DER ANFANG EINER SPURENSUCHE",
-    "intro": "Schwerter, Fibeln, Werkzeuge: Bei La Tène am Neuenburgersee kamen Dinge ans Licht, die einer ganzen Epoche ihren Namen gaben. Wer benutzte sie? Warum gelangten sie ins Wasser? Und wie wird aus solchen Spuren eine Geschichte über die Helvetier – oder sogar über die Schweiz?",
+    "title": "Etwas steckt im Schlamm",
+    "tag": "AKT I · BERGEN",
+    "intro": "La Tène, am Neuenburgersee. Waffen, Werkzeuge, Schmuck – warum landeten all diese Dinge im Wasser? Ihr übernehmt eine offene Fundakte. Sichert zuerst die Spuren. Jede spätere Entdeckung kann eure erste Vermutung verändern.",
     "knowledge": [
       {
         "title": "Warum lagen diese Dinge im Wasser?",
@@ -25,45 +25,49 @@ const stations=[
     "note": "Viele Funde von La Tène stammen aus einem ehemaligen Arm der Thielle/Zihl. Dazu gehören Waffen, Werkzeuge und Schmuck. Der nasse Boden konnte auch organische Materialien erhalten. Religiöse Niederlegungen sind eine wichtige Deutung des Fundplatzes; seine Funktion wurde und wird diskutiert. Ein einzelnes Fundstück beweist noch keinen genauen Ritualablauf und benennt nicht automatisch eine helvetische Person. Neuchâtel ist eure Reisestadt am Neuenburgersee. Das Laténium liegt in Hauterive und verbindet Museum und archäologischen Park. Der Fundort La Tène liegt weiter östlich bei Marin-Epagnier an der Thielle/Zihl. Museum und Fundort sind nicht derselbe Ort. Diese Stationen sind Vorschläge für eure Klassenreise, keine bereits festgelegte Route. 1857 wurden bei La Tène bedeutende Funde entdeckt. La Tène bezeichnet zunächst diesen Ort, Latènezeit beziehungsweise Latènekultur auch einen archäologischen Zeit- und Kulturzusammenhang der jüngeren Eisenzeit. Daraus folgt nicht, dass jedes Objekt der Latènekultur den Helvetiern gehörte. Der ältere Keltentext bietet dazu den Vergleich mit der Hallstattkultur. La Tène bleibt euer Ausgangspunkt: Ihr untersucht Gegenstände, fragt nach Menschen und vergleicht Funde mit Texten und Bildern. Ausblicke nach Zürich, Bern und Avenches helfen beim Einordnen. Am Ende kehrt ihr mit einem eigenen Urteil zu La Tène zurück. Wissen, Bilder und Quellen stehen jederzeit offen; Schreibaufgaben werden anhand von Kriterien selbst geprüft.",
     "tasks": [
       {
-        "type": "text",
-        "q": "Der Fund gab einer Epoche den Namen. Das Museum macht die Spuren zugänglich. Ergänze beide Namen.",
-        "fields": [
+        "type": "dig",
+        "q": "Findet und sichert drei Fundstellen, bevor ihr etwas deutet.",
+        "why": "Die drei Fundstellen sind dokumentiert. Erst der Fundzusammenhang macht aus einem Gegenstand eine archäologische Spur. Das Raster ist eine Spielsimulation, kein historischer Grabungsplan.",
+        "finds": [
           {
-            "label": "Der Fundort, nach dem die jüngere Eisenzeit benannt ist",
-            "accept": [
-              "La Tène",
-              "La Tene"
-            ]
+            "cell": 2,
+            "name": "Waffe",
+            "shape": "sword",
+            "detail": "Eine lange Klinge mit Griff. Waffen gehören zum Fundspektrum von La Tène."
           },
           {
-            "label": "Das archäologische Museum in Hauterive",
-            "accept": [
-              "Laténium",
-              "Latenium"
-            ]
+            "cell": 5,
+            "name": "Werkzeug",
+            "shape": "tool",
+            "detail": "Ein Werkzeug mit gebogenem Arbeitsende. Auch Arbeitsgeräte gehören zum Fundspektrum."
+          },
+          {
+            "cell": 9,
+            "name": "Schmuck",
+            "shape": "ring",
+            "detail": "Ein ringförmiges Schmuckstück. Schmuck ergänzt das Fundspektrum."
           }
-        ],
-        "why": "La Tène ist der Fundort; das Laténium ist das Museum. Beide gehören zu eurer Spurensuche am Neuenburgersee."
+        ]
       },
       {
         "type": "number",
-        "q": "Setze den Entdeckungs-Zeitanker: In welchem Jahr wurde der Fundort La Tène entdeckt?",
+        "q": "Der erste Eintrag im Archiv ist verblasst. In welchem Jahr begann die moderne Entdeckung von La Tène?",
         "label": "Jahr nach Christus",
         "answer": 1857,
         "why": "1857 bezeichnet die moderne Entdeckung. Die dort gefundenen Objekte sind wesentlich älter. Entdeckungsjahr und Alter eines Fundes dürfen nicht verwechselt werden."
       },
       {
         "type": "write",
-        "q": "Formuliert eure Forschungsfrage für Neuchâtel.",
+        "q": "Eure erste Vermutung: Warum kamen die Dinge ins Wasser?",
         "prompts": [
-          "Was möchtet ihr über die Helvetier oder La Tène herausfinden?",
-          "Welche Beobachtung oder Quelle könnte euch dabei helfen?"
+          "Ich vermute, die Dinge gelangten ins Wasser, weil …",
+          "Diese Spur müsste ich finden, um meine Vermutung zu prüfen …"
         ],
         "criteria": [
-          "Meine Frage bezieht sich konkret auf den Ort oder die Helvetier.",
-          "Ich nenne ein untersuchbares Objekt, eine Beschriftung oder eine Quelle."
+          "Meine Vermutung erklärt die Dinge im Wasser.",
+          "Ich nenne eine Spur, an der sie scheitern oder sich bewähren könnte."
         ],
-        "why": "Eine gute Forschungsfrage lässt sich an Spuren prüfen, etwa an Material, Fundort, Datierung oder der Wortwahl einer Museumsbeschriftung."
+        "why": "Eure erste Vermutung muss noch nicht stimmen. Notiert, welche Entdeckung dafür oder dagegen sprechen würde. In der Fundakte könnt ihr sie später verändern."
       }
     ],
     "source": "Ergänzung zur PDF: HLS, La Tène (Fundort); Laténium, Museum und Park.",
@@ -72,12 +76,16 @@ const stations=[
       "la-tene",
       "latenium",
       "neuchatel"
-    ]
+    ],
+    "reward": {
+      "title": "Fundkontext",
+      "text": "Waffen, Werkzeuge und Schmuck im Wasser: Der Zusammenhang zählt, nicht nur das einzelne Stück."
+    }
   },
   {
-    "title": "Wer steckt hinter den Funden?",
-    "tag": "SPUR 02 · MENSCHEN OHNE NAMENSSCHILD",
-    "intro": "Ein Fund aus La Tène trägt kein Etikett «Helvetier». Bevor ihr Gegenstände einer Gruppe zuschreibt, lernt ihr die Menschen und Nachbarn der keltischen Welt kennen. Wie weit reicht das, was ein Objekt über Herkunft erzählen kann?",
+    "title": "Die Namenlosen",
+    "tag": "AKT I · BERGEN",
+    "intro": "In der Fundakte fehlt das Wichtigste: die Namen der Menschen. Ein Schmuckstück verrät sie euch nicht. Folgt den Vergleichsspuren ins Gebiet der Helvetier und ihrer Nachbarn. Passt auf: Eine Ähnlichkeit kann euch auf eine falsche Fährte führen.",
     "knowledge": [
       {
         "title": "Verwandt, aber nicht ein Staat",
@@ -96,7 +104,7 @@ const stations=[
     "tasks": [
       {
         "type": "pairs",
-        "q": "Verbinde die Gruppen mit ihren ungefähren Siedlungsräumen.",
+        "q": "Legt die Namen auf die Gebietskarten. Wo sucht ihr nach Helvetiern – und wo nach ihren Nachbarn?",
         "items": [
           "Helvetier",
           "Rauriker",
@@ -121,29 +129,45 @@ const stations=[
         "why": "Diese Zuordnung ist eine räumliche Orientierung. Antike Siedlungsräume sind keine unveränderlichen modernen Staatsgrenzen."
       },
       {
-        "type": "write",
-        "q": "Korrigiere die Behauptung: «Ähnliche Schmuckstücke beweisen eine Einwanderung der Helvetier aus Süddeutschland.»",
-        "prompts": [
-          "Deine vorsichtigere Fassung",
-          "Eine andere mögliche Erklärung für ähnliche Gegenstände"
+        "type": "sort",
+        "q": "Zwei ähnliche Schmuckstücke. Drei mögliche Geschichten. Trennt das Denkbare vom vorschnellen Schluss.",
+        "items": [
+          "Die Form könnte durch Handel verbreitet worden sein.",
+          "Menschen könnten gewandert sein.",
+          "Ähnliche Bräuche könnten ähnliche Dinge hervorbringen.",
+          "Die Ähnlichkeit beweist eine Einwanderung aus Süddeutschland."
         ],
-        "criteria": [
-          "Ich kennzeichne die Herkunft als nicht abschliessend geklärt.",
-          "Ich berücksichtige Austausch, Handel oder gemeinsame Bräuche als weitere Möglichkeiten."
+        "categories": [
+          "Möglichkeit, die weitere Belege braucht",
+          "Behauptet mehr, als die Funde beweisen"
         ],
-        "why": "Die Herkunftsthese stützt sich auf bestimmte antike Texte. Fundähnlichkeit allein beweist weder Wanderung noch ethnische Zugehörigkeit."
+        "answer": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "why": "Handel, Wanderung und gemeinsame Bräuche können Ähnlichkeiten erklären. Keine dieser Erklärungen wird allein durch die ähnliche Form bewiesen."
       },
       {
-        "type": "write",
-        "q": "Korrigiere das Etikett: «Alle Menschen auf dem Gebiet der heutigen Schweiz waren Helvetier.»",
-        "prompts": [
-          "Schreibe eine historisch genauere Fassung."
+        "type": "pairs",
+        "q": "In der Akte steht: «Hier lebten nur Helvetier.» Repariert die falsche Zuordnung.",
+        "items": [
+          "Helvetier",
+          "Rauriker",
+          "Lepontier"
         ],
-        "criteria": [
-          "Ich benenne die Helvetier als eine keltische Gruppe.",
-          "Ich erwähne mindestens eine weitere damalige Gruppe, etwa Rauriker oder Lepontier."
+        "categories": [
+          "Tessin und benachbarte Südalpen",
+          "Mittelland",
+          "Raum Basel"
         ],
-        "why": "Die Helvetier gehörten zu den keltischen Gruppen. Auf dem Gebiet der heutigen Schweiz lebten auch andere Gruppen, etwa Rauriker und Lepontier (SRF, 01:02–01:50)."
+        "answer": [
+          1,
+          2,
+          0
+        ],
+        "why": "Die Helvetier waren eine von mehreren Gruppen. Das Gebiet der heutigen Schweiz hatte keine einheitliche helvetische Bevölkerung."
       }
     ],
     "source": "Informationen zu den Helvetiern.pdf, S. 1–2, Abschnitte 1–2; Caesar-Auszug im DOCX; HLS; arCHaeo 2023.3.",
@@ -154,12 +178,16 @@ const stations=[
     "images": [
       "lindenhof",
       "helvetii-coin"
-    ]
+    ],
+    "reward": {
+      "title": "Keine Namensschilder",
+      "text": "Ähnliche Dinge belegen nicht automatisch dieselbe Bevölkerungsgruppe oder eine Wanderung."
+    }
   },
   {
-    "title": "Ein Werkzeug, eine ganze Welt",
-    "tag": "SPUR 03 · ARBEITEN UND HANDELN",
-    "intro": "Hinter jedem Werkzeug stehen Hände, Wissen und Arbeit. Die Funde von La Tène öffnen den Blick auf Landwirtschaft, Handwerk und Austausch. Folgt ihnen vom einzelnen Gegenstand zu den Siedlungen und Verkehrswegen der Helvetier.",
+    "title": "Was die Dinge können",
+    "tag": "AKT I · BERGEN",
+    "intro": "Eine Waffe erzählt von mehr als einem Kampf. Jemand musste sie herstellen, versorgen und transportieren. Öffnet die Werkstattakte: Könnte hinter euren Funden ein ganzes Netz aus Arbeit und Handel stecken?",
     "knowledge": [
       {
         "title": "Höfe, Dörfer, Oppida",
@@ -178,7 +206,7 @@ const stations=[
     "tasks": [
       {
         "type": "pairs",
-        "q": "Packe die Alltagskiste: Verbinde Gegenstände aus dem keltischen Umfeld der Helvetier mit ihrer Funktion.",
+        "q": "Auf dem Labortisch liegen Alltagsgegenstände. Findet für jeden seine Funktion.",
         "items": [
           "Salz",
           "Eiserne Pflugschar",
@@ -201,7 +229,7 @@ const stations=[
       },
       {
         "type": "order",
-        "q": "Wie liess sich ein Oppidum der Helvetier versorgen? Baue eine plausible Wirkungskette.",
+        "q": "Eine Siedlung braucht Nachschub. Bringt die Versorgungskette wieder in Gang.",
         "instruction": "Ordne von der Voraussetzung zur möglichen Folge. Die Kette ist vereinfacht; eine Stadt entstand nicht automatisch.",
         "items": [
           "Mehr Menschen können ausserhalb der Landwirtschaft arbeiten.",
@@ -219,7 +247,7 @@ const stations=[
       },
       {
         "type": "write",
-        "q": "Erkläre am Bild einer See- oder Flusslandschaft, warum Menschen dort siedeln und handeln konnten.",
+        "q": "Sucht auf dem Uferbild einen möglichen Verkehrsweg. Was würde er für eure Funde erklären?",
         "prompts": [
           "Zwei mögliche Vorteile des Wassers oder der Lage",
           "Eine Grenze deiner Deutung aus dem heutigen Bild"
@@ -239,12 +267,16 @@ const stations=[
       "helvetii-coin",
       "fibula",
       "neuchatel"
-    ]
+    ],
+    "reward": {
+      "title": "Werkstattnetz",
+      "text": "Herstellung, Versorgung und Austausch verbinden Gegenstände mit Menschen."
+    }
   },
   {
-    "title": "Was von einem Menschen bleibt",
-    "tag": "SPUR 04 · SCHMUCK, GRÄBER, NAMEN",
-    "intro": "Eine Fibel hält Kleidung zusammen; im Museum wird sie zur Spur eines Lebens. Um die Gegenstände von La Tène besser zu verstehen, vergleicht ihr sie mit Grabfunden und Inschriften anderer Orte. Was lässt sich über eine Person sagen – und was nicht?",
+    "title": "Eine Frau ohne Namen",
+    "tag": "AKT I · BERGEN",
+    "intro": "Eine Vergleichsakte aus Zürich: Ein Grab bewahrt Spuren einer Frau, aber keine Lebensgeschichte. Könnt ihr ihr näherkommen, ohne ihr eine Identität zu erfinden? Alte Ortsnamen und eine Inschrift führen euch weiter.",
     "knowledge": [
       {
         "title": "Die Frau beim Schulhaus Kern",
@@ -263,7 +295,7 @@ const stations=[
     "tasks": [
       {
         "type": "pairs",
-        "q": "Verbinde die antiken Namen mit den heutigen Orten.",
+        "q": "Die Karte trägt alte Namen. Verbindet sie mit den heutigen Orten.",
         "items": [
           "Eburodunum",
           "Salodurum",
@@ -282,21 +314,29 @@ const stations=[
         "why": "Namen können lange fortleben. Das allein beweist keine unveränderte Bevölkerung über alle Jahrhunderte."
       },
       {
-        "type": "write",
-        "q": "Verfasse eine sorgfältige Beschriftung zum Frauengrab beim Schulhaus Kern.",
-        "prompts": [
-          "Zwei gesicherte Angaben aus der Wissenskarte",
-          "Eine Zuschreibung, bei der du vorsichtig bleibst"
+        "type": "sort",
+        "q": "Öffnet die Grabakte aus Zürich. Was dürft ihr über diese Frau sagen?",
+        "items": [
+          "Grab beim Schulhaus Kern in Zürich",
+          "Datierung um 200 v. Chr.",
+          "Ihr persönlicher Name",
+          "Ihre sicher helvetische Zugehörigkeit"
         ],
-        "criteria": [
-          "Ich nenne etwa Zürich, Entdeckung 2017, Datierung um 200 v. Chr. oder die Beigaben.",
-          "Ich unterscheide «keltisch» von einer nicht sicher belegten Zuordnung zu den Helvetiern."
+        "categories": [
+          "In der Vergleichsakte belegt",
+          "Nicht sicher bekannt"
         ],
-        "why": "Die Grabuntersuchung eröffnet den Blick auf eine einzelne Person. Sie erlaubt nicht jede Aussage über Stammeszugehörigkeit oder den Alltag aller Frauen."
+        "answer": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "why": "Der Fund erlaubt Einblicke in ein einzelnes Leben. Name und helvetische Zugehörigkeit der Frau sind damit nicht gesichert."
       },
       {
         "type": "text",
-        "q": "Entschlüssle den Schrift-Hinweis aus Norditalien.",
+        "q": "Ein Schriftstück führt nach Norditalien. Entschlüsselt Fundort und verwendete Schrift.",
         "fields": [
           {
             "label": "In welcher Stadt wurde das genannte Gefäss gefunden?",
@@ -326,12 +366,16 @@ const stations=[
       "torc",
       "fibula",
       "lindenhof"
-    ]
+    ],
+    "reward": {
+      "title": "Ein einzelnes Leben",
+      "text": "Ein Grab kann Einzelheiten bewahren, ohne Namen und Gruppenzugehörigkeit sicher zu verraten."
+    }
   },
   {
-    "title": "Gabe, Besitz oder Machtzeichen?",
-    "tag": "SPUR 05 · GÖTTER UND EINFLUSS",
-    "intro": "Warum legt jemand wertvolle Dinge nieder? La Tène stellt Fragen nach Ritualen und Bedeutung. Erweitert den Blick auf Götter, politische Macht und Orgetorix – und achtet darauf, welche Antworten aus welcher Zeit stammen.",
+    "title": "Die Spur ins Wasser",
+    "tag": "AKT II · WIDERSPRÜCHE",
+    "intro": "Jetzt wird es heikel: Besitz verloren, Beute versenkt, Gaben niedergelegt? Ein Fund im Wasser liefert noch keine fertige Erklärung. Trennt die Spuren von den Geschichten darüber, bevor ihr eure Vermutung festschreibt.",
     "knowledge": [
       {
         "title": "Politik nach Caesar",
@@ -350,7 +394,7 @@ const stations=[
     "tasks": [
       {
         "type": "letters",
-        "q": "Entschlüssle den Namen des Gottes, der in römischer Zeit mit Mars verbunden wurde.",
+        "q": "Ein Gottesname ist durcheinandergeraten. Setzt ihn zusammen: In römischer Zeit wurde er mit Mars verbunden.",
         "letters": [
           "T",
           "C",
@@ -365,7 +409,7 @@ const stations=[
       },
       {
         "type": "write",
-        "q": "Du schreibst über Orgetorix. Wie hältst du Caesars Perspektive im Text sichtbar?",
+        "q": "Caesar beschuldigt Orgetorix. Haltet in zwei Aktennotizen fest, wer hier über wen berichtet.",
         "prompts": [
           "Ein Satz über sein politisches Vorhaben",
           "Ein Satz über die Grenzen der Überlieferung"
@@ -378,7 +422,7 @@ const stations=[
       },
       {
         "type": "sort",
-        "q": "Ordne die Aussagen nach ihrem Erkenntnisstatus.",
+        "q": "Am Aktenbrett kleben Fakten und Vermutungen durcheinander. Trennt sie.",
         "items": [
           "Eine Münze wurde in einem archäologischen Kontext gefunden.",
           "Die Münze wurde vermutlich als Opfer niedergelegt.",
@@ -407,12 +451,16 @@ const stations=[
       "fibula",
       "helvetii-coin"
     ],
-    "imageNote": "Die Bilder zeigen Vergleichsobjekte und eine Münze, keine Darstellung von Caturix oder Orgetorix."
+    "imageNote": "Die Bilder zeigen Vergleichsobjekte und eine Münze, keine Darstellung von Caturix oder Orgetorix.",
+    "reward": {
+      "title": "Offenes Ritual",
+      "text": "Religiöse Niederlegung ist eine wichtige Deutung für La Tène; der genaue Ablauf bleibt offen."
+    }
   },
   {
-    "title": "Als die Helvetier aufbrachen",
-    "tag": "SPUR 06 · DER WEG VON 58 V. CHR.",
-    "intro": "Die Gegenstände erzählen vom Leben; Caesar erzählt vom Krieg. Verlasst für einen Moment den Fundort und verfolgt den Auszug der Helvetier. Prüft den Weg, die Motive und die Zahlen, bevor ihr den Bericht mit den archäologischen Spuren verbindet.",
+    "title": "Der abgebrochene Weg",
+    "tag": "AKT II · WIDERSPRÜCHE",
+    "intro": "58 v. Chr.: Die Helvetier brechen auf. Dann wird ihr Weg blockiert. Rekonstruiert den Zug aus Caesars Bericht. Achtung: Diese Ereignisse erklären nicht automatisch die älteren Funde von La Tène.",
     "knowledge": [
       {
         "title": "Warum aufbrechen?",
@@ -431,7 +479,7 @@ const stations=[
     "tasks": [
       {
         "type": "order",
-        "q": "Ordne alle sieben Schritte des Konflikts.",
+        "q": "Der Zug ist auseinandergerissen. Rekonstruiert seinen Weg in sieben Schritten.",
         "items": [
           "Verhandlungen führen zu keiner Einigung.",
           "Helvetier und Verbündete brechen auf.",
@@ -455,7 +503,7 @@ const stations=[
       },
       {
         "type": "write",
-        "q": "Ein Mitschüler rechnet: 368’000 minus 110’000 gleich 258’000 Tote. Schreibe eine begründete Korrektur.",
+        "q": "Eine Zahl wird zur Schlagzeile: «258’000 Tote». Stoppt sie mit einer begründeten Aktennotiz.",
         "prompts": [
           "Warum trägt diese Rechnung historisch nicht?",
           "Wie würdest du Caesars Zahlen im Museum kennzeichnen?"
@@ -468,7 +516,7 @@ const stations=[
       },
       {
         "type": "text",
-        "q": "Gib das Ziel und den Schauplatz der entscheidenden Niederlage ein.",
+        "q": "Wo sollte die Reise enden – und wo wurde sie entschieden? Ergänzt die beiden Orte.",
         "fields": [
           {
             "label": "Zielregion im westlichen Gallien",
@@ -499,12 +547,16 @@ const stations=[
       "la-tene",
       "gleyre"
     ],
-    "imageNote": "Fundortfoto und Historienbild stehen für verschiedene Arten von Quellen. Keines ist ein Augenzeugenbild des Auszugs."
+    "imageNote": "Fundortfoto und Historienbild stehen für verschiedene Arten von Quellen. Keines ist ein Augenzeugenbild des Auszugs.",
+    "reward": {
+      "title": "Der blockierte Zug",
+      "text": "Caesars Bericht von 58 v. Chr. ist kein unmittelbarer Beleg für die Entstehung des Fundplatzes."
+    }
   },
   {
-    "title": "Wer darf Geschichte erzählen?",
-    "tag": "SPUR 07 · CAESAR UND DIVICO",
-    "intro": "Funde sprechen nicht von selbst. Ein römischer Sieger schreibt, spätere Künstler malen Helden. Vergleicht diese Stimmen mit dem, was ihr an La Tène gelernt habt: Jede Geschichte entsteht aus einer Auswahl und einer Perspektive.",
+    "title": "Der Sieger erzählt",
+    "tag": "AKT II · WIDERSPRÜCHE",
+    "intro": "Der wichtigste Zeuge ist zugleich der Sieger. Caesar erzählt – aber wessen Geschichte? Und warum sieht ein Gemälde viele Jahrhunderte später so triumphal aus? Prüft die beiden Erzählungen gegeneinander.",
     "knowledge": [
       {
         "title": "Zwei Daten, eine Figur",
@@ -523,7 +575,7 @@ const stations=[
     "tasks": [
       {
         "type": "write",
-        "q": "Du interviewst Caesar über die Helvetier. Hinterfrage seine Darstellung der besonders tapferen Gegner.",
+        "q": "Ihr habt eine Frage an Caesar. Stellt diejenige, die seine Siegergeschichte ins Wanken bringen könnte.",
         "prompts": [
           "Deine Frage an Caesar",
           "Warum ist diese Frage für die Bewertung seiner Darstellung wichtig?"
@@ -537,14 +589,14 @@ const stations=[
       },
       {
         "type": "number",
-        "q": "Divico wird mit einem früheren Sieg verbunden: In welchem Jahr vor Christus fand die Schlacht bei Agen statt?",
+        "q": "Das Gemälde führt zu einem älteren Sieg bei Agen. Findet dessen Jahr vor Christus in der Akte.",
         "label": "Jahr vor Christus",
         "answer": 107,
         "why": "107 v. Chr. gehört zur Überlieferung des Tiguriner-Sieges bei Agen. Das ist nicht die Niederlage der Helvetier bei Bibracte 58 v. Chr."
       },
       {
         "type": "write",
-        "q": "Untersuche das historische Gemälde in der Bildspur.",
+        "q": "Das Bild sieht wie ein Augenzeugenbericht aus. Sucht zwei Details, die einen Triumph inszenieren.",
         "prompts": [
           "Zwei sichtbare Mittel, mit denen Sieg oder Unterlegenheit inszeniert werden",
           "Was erzählt das Bild eher über die spätere Schweiz als über die Antike?"
@@ -564,12 +616,16 @@ const stations=[
     "images": [
       "gleyre",
       "helvetii-coin"
-    ]
+    ],
+    "reward": {
+      "title": "Parteilicher Zeuge",
+      "text": "Caesars Sieg und spätere Heldenbilder beeinflussen, wie die Helvetier erzählt werden."
+    }
   },
   {
-    "title": "Nach der Schlacht geht das Leben weiter",
-    "tag": "SPUR 08 · DER WANDEL UNTER ROM",
-    "intro": "Die Geschichte der Menschen endet nicht mit einer Niederlage und auch nicht mit dem Namen einer Epoche. Folgt den Helvetiern in die römische Zeit: nach Aventicum und zu weiteren Vergleichsorten. Welche Dinge und Lebensweisen verändern sich?",
+    "title": "Niemand ist verschwunden",
+    "tag": "AKT II · WIDERSPRÜCHE",
+    "intro": "Nach Bibracte endet die Akte nicht. Häuser, Orte und Namen führen weiter in die römische Zeit. Sucht nach den Menschen, die in einer Geschichte von Sieg und Niederlage leicht verschwinden.",
     "knowledge": [
       {
         "title": "Civitas ist mehr als Stadt",
@@ -588,7 +644,7 @@ const stations=[
     "tasks": [
       {
         "type": "pairs",
-        "q": "Verbinde die Orte mit dem jeweiligen Zugang zur Geschichte.",
+        "q": "Vier Fundorte melden sich. Verbindet sie mit den passenden Akten.",
         "items": [
           "Zürich, Lindenhof",
           "Zürich, Schulhaus Kern",
@@ -611,7 +667,7 @@ const stations=[
       },
       {
         "type": "text",
-        "q": "Zwei Schlüsselwörter für das Leben unter Rom.",
+        "q": "Öffnet die Akte nach der Eroberung: Wie heissen der Hauptort und die kulturelle Verbindung?",
         "fields": [
           {
             "label": "Antiker Name von Avenches",
@@ -631,17 +687,25 @@ const stations=[
         "why": "Aventicum war der Hauptort. Gallorömisch beschreibt eine kulturelle Verbindung und keine vollständige Auslöschung der lokalen Bevölkerung."
       },
       {
-        "type": "write",
-        "q": "Ein Schild sagt: «Civitas Helvetiorum = eine einzige Stadt». Korrigiere es und erkläre das Weiterleben.",
-        "prompts": [
-          "Was umfasst die Civitas?",
-          "Warum bedeutet die römische Herrschaft nicht das Verschwinden der Helvetier?"
+        "type": "sort",
+        "q": "Im Register wurde die ganze Civitas auf eine Stadt reduziert. Trennt Gebiet und Mittelpunkt.",
+        "items": [
+          "Aventicum als Hauptort",
+          "Das zugehörige Umland",
+          "Die Bevölkerung des Gebietes",
+          "Theater und Bäder des Hauptortes"
         ],
-        "criteria": [
-          "Ich beziehe Umland und Bevölkerung ein.",
-          "Ich beschreibe Veränderung und Fortbestehen statt eines abrupten Bevölkerungsaustauschs."
+        "categories": [
+          "Hauptort",
+          "Geht über den Hauptort hinaus"
         ],
-        "why": "Die territoriale Gemeinschaft umfasste mehr als ihren Hauptort. Auch Konflikte wie 69 n. Chr. beendeten nicht pauschal die Geschichte ihrer Bevölkerung."
+        "answer": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "why": "Die Civitas Helvetiorum umfasste Gebiet und Bevölkerung, nicht nur Aventicum. Unter römischer Herrschaft lebten Menschen weiter und veränderten ihre Lebensweise."
       }
     ],
     "source": "PDF S. 5–6, Abschnitte 12 und 14; HLS Civitas; Kantonsarchäologie St. Gallen, Kempraten.",
@@ -652,19 +716,23 @@ const stations=[
     "images": [
       "avenches",
       "lindenhof"
-    ]
+    ],
+    "reward": {
+      "title": "Weiterleben",
+      "text": "Römische Herrschaft bedeutet Veränderung, nicht das Verschwinden der Bevölkerung."
+    }
   },
   {
-    "title": "Den Spuren auf den Grund gehen",
-    "tag": "SPUR 09 · BERN ALS VERGLEICH",
-    "intro": "Wie werden aus Fundstücken Aussagen über Menschen? Der SRF-Film zeigt euch das an Bern. Nehmt die Methode mit zurück nach La Tène: Beobachtung, Rekonstruktion und Vermutung müssen auseinandergehalten werden.",
+    "title": "Knochen im Heiligtum",
+    "tag": "AKT III · DIE EIGENE DEUTUNG",
+    "intro": "Eine Nachricht aus Bern: Bärenknochen in einem Heiligtum. Das Vergleichsteam hat einen Film geschickt. Findet den Moment, an dem aus einem Knochenfund eine Geschichte über ein Ritual wird. Das braucht ihr für La Tène.",
     "video": true,
     "note": "Ohne Video: Der Beitrag bezeichnet die Siedlung auf der Engehalbinsel als Brenodurum und ihre Bewohner als Helvetier. Eine befestigte keltische Siedlung heisst Oppidum. Im Heiligtum wurden Bärenknochen gefunden; das vermutete Ritual ist eine Deutung. Unter römischer Herrschaft lebte die Bevölkerung weiter; es entwickelte sich eine gallorömische Kultur. Der Film führt nach Bern, nicht nach Neuchâtel. Vergleiche die Methoden: Was wird ausgegraben? Was wird rekonstruiert? Woran erkennt man im Film eine Vermutung? Im Museum am Neuenburgersee kannst du dieselben Fragen stellen.",
     "source": "SRF: Die Kelten und die Römer (2024), 04:01–04:40, 07:09–07:39 und 10:31–11:21; geprüft anhand der deutschen Untertitel.",
     "tasks": [
       {
         "type": "text",
-        "q": "04:01–04:40 · Entschlüssle den Fundort auf der Engehalbinsel bei Bern.",
+        "q": "Funk aus Bern · 04:01–04:40: Identifiziert Siedlung und Siedlungstyp.",
         "fields": [
           {
             "label": "Wie nennt der Film diese Siedlung?",
@@ -685,7 +753,7 @@ const stations=[
       },
       {
         "type": "mark",
-        "q": "07:09–07:39 · Markiere die Wörter, die eine Deutung als unsicher kennzeichnen.",
+        "q": "07:09–07:39: Fangt die Vermutung ab. Markiert die Wörter, mit denen der Film seine Unsicherheit zeigt.",
         "passage": [
           "Wir",
           "nehmen",
@@ -710,7 +778,7 @@ const stations=[
       },
       {
         "type": "text",
-        "q": "10:31–11:21 · Die Bevölkerung lebt unter Rom weiter: Wie heisst die Kultur aus keltischen und römischen Einflüssen?",
+        "q": "10:31–11:21: Die Menschen leben weiter. Unter welchem Kulturbegriff findet ihr ihre Spuren?",
         "fields": [
           {
             "label": "Es entstand die … Kultur.",
@@ -741,12 +809,16 @@ const stations=[
       "latenium-interior",
       "torc"
     ],
-    "imageNote": "Diese Vergleichsbilder stammen nicht aus dem SRF-Film. Die Ausstellung im Laténium zeigt hier die Steinzeit; der Film behandelt dagegen Bern und die Eisenzeit."
+    "imageNote": "Diese Vergleichsbilder stammen nicht aus dem SRF-Film. Die Ausstellung im Laténium zeigt hier die Steinzeit; der Film behandelt dagegen Bern und die Eisenzeit.",
+    "reward": {
+      "title": "Knochen und Vermutung",
+      "text": "Bärenknochen sind ein Befund; der Ablauf eines Opferrituals ist eine Deutung."
+    }
   },
   {
-    "title": "Aus einem Namen wird eine Figur",
-    "tag": "SPUR 10 · HELVETIA UND DIE SCHWEIZ",
-    "intro": "Von den Funden in La Tène führt kein gerader Weg zur heutigen Schweiz. Trotzdem wurde der Name der Helvetier zum Symbol. Untersucht Helvetia als Allegorie: Welche Geschichte über ein Land wird hier sichtbar gemacht?",
+    "title": "Die Frau auf der Münze",
+    "tag": "AKT III · DIE EIGENE DEUTUNG",
+    "intro": "Im Bildarchiv taucht eine Frau mit Schild auf. Helvetia. Eine Spur zu den antiken Helvetiern – oder eine viel spätere Idee der Schweiz? Untersucht ihre wechselnden Gestalten, bevor ihr sie in eure Fundakte aufnehmt.",
     "knowledge": [
       {
         "title": "Was ist eine Allegorie?",
@@ -769,7 +841,7 @@ const stations=[
     "tasks": [
       {
         "type": "letters",
-        "q": "Entschlüssle den Begriff: Eine Bildfigur stellt einen abstrakten Begriff oder ein Land dar.",
+        "q": "Die Frau ist kein Porträt. Entschlüsselt den Begriff für eine Figur, die eine Idee sichtbar macht.",
         "letters": [
           "L",
           "E",
@@ -786,7 +858,7 @@ const stations=[
       },
       {
         "type": "write",
-        "q": "Vergleiche die stehende Helvetia auf der Münze mit «Helvetia auf der Reise».",
+        "q": "Zwei Helvetias, zwei Auftritte. Was hat sich zwischen Münze und Reisender verändert?",
         "prompts": [
           "Was erkennst du bei Körperhaltung und Gegenständen?",
           "Welche unterschiedlichen Schweizbilder deutest du daraus?",
@@ -801,7 +873,7 @@ const stations=[
       },
       {
         "type": "write",
-        "q": "Entwirf eine Helvetia für die Schweiz von heute.",
+        "q": "Gebt Helvetia drei neue Gegenstände. Welche Schweiz würde sie damit erzählen?",
         "prompts": [
           "Welche drei Attribute oder Gegenstände würdest du ihr geben – und warum?",
           "Wessen Perspektive soll sichtbar werden, die im klassischen Bild leicht fehlt?"
@@ -822,12 +894,16 @@ const stations=[
       "helvetia-coin",
       "helvetia-basel-detail",
       "helvetia-basel"
-    ]
+    ],
+    "reward": {
+      "title": "Helvetia",
+      "text": "Die Frau verkörpert die spätere Schweiz. Sie ist keine antike Helvetierin."
+    }
   },
   {
-    "title": "Jetzt seid ihr am Zug",
-    "tag": "SPUR 11 · EUER FELDHEFT FÜR LA TÈNE",
-    "intro": "Geht mit euren Fragen an den Neuenburgersee. Am Fundort La Tène, im Laténium und am Neuenburger Republiksdenkmal untersucht ihr drei verschiedene Spuren: einen Ort, seine museale Deutung und ein späteres Bild der Schweiz. Nutzt alternativ die Fotos.",
+    "title": "Raus aus dem Grabungszelt",
+    "tag": "AKT III · DIE EIGENE DEUTUNG",
+    "intro": "Jetzt geht eure Akte mit auf die Reise nach Neuchâtel. La Tène, Laténium, Republiksdenkmal: Drei Orte, drei Arten von Spuren. Sammelt eure eigenen Beobachtungen vor Ort oder an den vergrösserbaren Fotos.",
     "knowledge": [
       {
         "title": "Laténium in Hauterive",
@@ -850,7 +926,7 @@ const stations=[
     "tasks": [
       {
         "type": "write",
-        "q": "Fundprotokoll: Wähle ein Objekt oder eine Rekonstruktion im Laténium – oder ein Bild in diesem Spiel.",
+        "q": "Nehmt eine eigene Spur in die Akte auf: ein Museumsobjekt oder ein Bild aus dem Archiv.",
         "prompts": [
           "Name, Ort und Datierung (oder ausdrücklich: unbekannt)",
           "Drei sichtbare Merkmale und der Status: Original, Rekonstruktion oder heutige Fotografie",
@@ -865,7 +941,7 @@ const stations=[
       },
       {
         "type": "write",
-        "q": "Landschaft lesen: Untersuche das Seeufer bei Neuchâtel oder das entsprechende Foto.",
+        "q": "Lest das Ufer. Wo würde eure erste Vermutung zur Landschaft passen – und wo wird sie unsicher?",
         "prompts": [
           "Was siehst du heute?",
           "Welche Möglichkeiten könnte das Wasser früher für Verkehr oder Siedlung geboten haben?",
@@ -880,7 +956,7 @@ const stations=[
       },
       {
         "type": "write",
-        "q": "Zwei Allegorien begegnen sich: Untersuche das Neuenburger Republiksdenkmal vor Ort oder auf dem Bild.",
+        "q": "Zwei Frauen am Denkmal: Entschlüsselt, wer wen empfängt und warum.",
         "prompts": [
           "Was zeigen Blickrichtung, Gesten und Gegenstände der beiden stehenden Figuren?",
           "Helvetia empfängt die Republik Neuenburg: Welche politische Beziehung stellt das Bild damit her?",
@@ -900,12 +976,16 @@ const stations=[
       "republique",
       "la-tene",
       "latenium"
-    ]
+    ],
+    "reward": {
+      "title": "Eigene Beobachtung",
+      "text": "La Tène, Museum und Denkmal erzählen auf unterschiedliche Weise von Vergangenheit."
+    }
   },
   {
-    "title": "Was ihr dem See ablest",
-    "tag": "SPUR 12 · EURE GESCHICHTE VON LA TÈNE",
-    "intro": "Kehrt zur ersten Frage zurück: Was verraten uns die Dinge von La Tène – und was erzählen erst Römer, Museen und spätere Bilder? Verbindet eure Beobachtungen zu einer Ausstellung, die ihre Belege und offenen Fragen sichtbar macht.",
+    "title": "Was bleibt von eurer Vermutung?",
+    "tag": "AKT III · DIE EIGENE DEUTUNG",
+    "intro": "Die Akte liegt auf dem Tisch. Ihr habt Dinge, Berichte und Bilder untersucht. Welche Erklärung für La Tène könnt ihr verteidigen? Zieht eure Belege zusammen – und zeigt auch die Spur, die eurer Vermutung widerspricht.",
     "knowledge": [
       {
         "title": "Was wissen wir über wen?",
@@ -924,7 +1004,7 @@ const stations=[
     "tasks": [
       {
         "type": "sort",
-        "q": "Ordne die Aussagen nach ihrem Bezug: antike Bevölkerung, archäologischer Begriff oder spätere Allegorie.",
+        "q": "Letzte Kontrolle am Aktenbrett: Sortiert Volk, Kulturbegriff und Symbol auseinander.",
         "items": [
           "Helvetier",
           "Latènekultur",
@@ -950,7 +1030,7 @@ const stations=[
       },
       {
         "type": "write",
-        "q": "Euer Museumsschild: «Helvetier – Spuren, Stimmen, Bilder».",
+        "q": "Schreibt die Bildunterschrift eurer Schlussakte: Was verbinden La Tène, Caesar und Helvetia wirklich?",
         "prompts": [
           "Schreibe 4–6 Sätze mit einem Beispiel aus Neuchâtel, einem aus der antiken Überlieferung und einem aus der Helvetia-Bildsprache."
         ],
@@ -963,11 +1043,11 @@ const stations=[
       },
       {
         "type": "write",
-        "q": "Was hat sich durch die Reise oder Bildarbeit an deinem Helvetierbild verändert?",
+        "q": "Kehrt zu eurer ersten Vermutung zurück. Welche Spur hat sie verändert?",
         "prompts": [
-          "Meine frühere Vorstellung",
-          "Eine Beobachtung oder Quelle, die meine Sicht verändert oder präzisiert hat",
-          "Eine Frage, die offen bleibt"
+          "Meine erste Vermutung war …",
+          "Diese konkrete Spur spricht dafür oder dagegen …",
+          "Jetzt vermute ich … Offen bleibt …"
         ],
         "criteria": [
           "Ich beziehe mich auf eine konkrete Erfahrung oder ein konkretes Bild.",
@@ -985,6 +1065,10 @@ const stations=[
       "neuchatel",
       "helvetia-basel-detail",
       "republique"
-    ]
+    ],
+    "reward": {
+      "title": "Die offene Akte",
+      "text": "Eine tragfähige Deutung nennt ihre Belege und ihre Grenzen."
+    }
   }
 ];

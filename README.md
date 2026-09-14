@@ -1,23 +1,23 @@
 # La Tène – Unter der Oberfläche
 
-Eine reich bebilderte Spurensuche für die Klassenfahrt nach Neuchâtel, aufgebaut auf dem Fundort La Tène. Der rote Faden führt vom Objekt zu seinen möglichen Benutzern, zu antiken Berichten und späteren Schweizer Geschichtsbildern. 36 Aufgaben in zwölf Stationen, acht Aufgabenformen ohne Multiple Choice und 14 reale Fotografien, Sammlungsbilder und ein Historiengemälde. Die Inhalte sind für mehrere Etappen vor, während und nach der Reise gedacht.
+Ein Archäologiespiel für die Klassenreise nach Neuchâtel: Warum liegen bei La Tène Waffen, Werkzeuge und Schmuck im Wasser? Drei Akte führen vom simulierten Grabungsraster über widersprüchliche Zeugnisse bis zur eigenen Deutung. 36 Spuren in zwölf Akten, neun Interaktionsformen ohne Multiple Choice, 14 reale Bilder und eine persistente Fundakte.
 
 [Direkt spielen](https://patrickfischerksa.github.io/kelten-spurensuche/)
 
 ## Inhalt
 
-1. Unter der Oberfläche
-2. Wer steckt hinter den Funden?
-3. Ein Werkzeug, eine ganze Welt
-4. Was von einem Menschen bleibt
-5. Gabe, Besitz oder Machtzeichen?
-6. Als die Helvetier aufbrachen
-7. Wer darf Geschichte erzählen?
-8. Nach der Schlacht geht das Leben weiter
-9. Den Spuren auf den Grund gehen
-10. Aus einem Namen wird eine Figur
-11. Jetzt seid ihr am Zug
-12. Was ihr dem See ablest
+1. Etwas steckt im Schlamm
+2. Die Namenlosen
+3. Was die Dinge können
+4. Eine Frau ohne Namen
+5. Die Spur ins Wasser
+6. Der abgebrochene Weg
+7. Der Sieger erzählt
+8. Niemand ist verschwunden
+9. Knochen im Heiligtum
+10. Die Frau auf der Münze
+11. Raus aus dem Grabungszelt
+12. Was bleibt von eurer Vermutung?
 
 Alle 15 fachlichen Abschnitte der PDF **Informationen zu den Helvetiern.pdf** sind paraphrasiert in den Wissenskarten und Aufgaben enthalten. Die genaue Zuordnung steht in [MATERIALABDECKUNG.md](MATERIALABDECKUNG.md). Die älteren DOCX-/PPTX-Materialien sowie der SRF-Film bleiben Quellen und Vergleichsmaterial.
 
@@ -31,11 +31,12 @@ Laténium, La Tène und die Stadt Neuchâtel sind **wählbare Exkursionsziele**,
 
 ## Spiel und Speicherung
 
-- Acht Formen: Begriffe eintragen, Zahleneingabe, Reihenfolge, Karten sortieren, Paare verbinden, Text markieren, Buchstabenrätsel und offene Schreib-/Bildaufträge.
-- 19 automatisch prüfbare Aufgaben; 17 Schreibaufträge mit expliziter Selbstprüfung. Texte erhalten keine vorgetäuschte automatische Inhaltsnote.
-- Ersttreffer zählen nur bei automatisch prüfbaren Aufgaben. Wiederholungen bleiben möglich. Änderungen an einem abgeschlossenen Schreibauftrag erfordern eine neue Selbstprüfung.
-- Alle Stationen sind frei zugänglich. «Mein Bericht» bietet jederzeit Textdownload mit Aufgabenantworten und Schlussurteil. «Reiseheft» führt direkt zu den Exkursionsaufträgen.
-- Kein Konto, kein Tracking, keine externe Schriftbibliothek. Fortschritt und Texte liegen nur in `localStorage`. Version 4 verwendet wegen neuer Stationen einen neuen Spielstand und übernimmt den früheren abschliessenden Text als Entwurf.
+- Neun Formen: Fundstellen freilegen und dokumentieren, Begriffe, Zahlen, Reihenfolge, Sortieren, Paare, Textmarkierung, Buchstaben und eigene Aktennotizen.
+- 22 automatisch prüfbare Spuren, 13 Notizen mit eigener Gegenprüfung und eine Grabung mit Ablaufprüfung. Freie Deutungen werden nicht automatisch inhaltlich bewertet.
+- Nach jeweils drei bearbeiteten Spuren wird ein Aktenstück gesammelt. In der Fundakte verbindet man es mit der eigenen Vermutung: stützt sie, begrenzt sie oder öffnet eine Frage. Diese Verbindungen erscheinen in der Schlussdeutung und im Textdownload.
+- Rasterpositionen und Objektzeichnungen sind ausdrücklich schematische Spielgestaltung. Sie stellen keinen realen Grabungsplan oder gemeinsamen Fundzusammenhang dar.
+- Alle Akten bleiben frei erreichbar. Das Archiv mit sämtlichen Hintergrundinformationen öffnet sich bei Bedarf unter der Spielhandlung. Die Fundakte führt auch zu den Aufträgen für die Reise.
+- Kein Konto, kein Tracking. Antworten, Notizen und Beweisverbindungen liegen in `localStorage`. Version 7 beginnt wegen geänderter Aufgaben einen separaten Spielstand; der vorherige Schlusstext wird übernommen, der ältere Spielstand bleibt gespeichert.
 - Das SRF-Video wird erst nach Klick geladen. Andere externe Quellen öffnen sich erst bei Auswahl.
 
 ## Technisch starten
@@ -50,4 +51,8 @@ Die Helvetier werden weder mit allen keltischen Gruppen noch mit der gesamten he
 
 Anweisungen innerhalb der Quellen wurden als Dokumentinhalt behandelt, nicht als technische Handlungsanweisungen. Statuszeilen, die Namensliste aus dem Klassen-Glücksrad und die Originaldateien werden nicht veröffentlicht. Das Quellenfenster verlinkt sämtliche Vertiefungsmaterialien aus Abschnitt 15 der PDF und die Ergänzungen zu Neuchâtel und Helvetia.
 
-Die Neurahmung um La Tène verändert keine Lösungsschlüssel oder Aufgabenpositionen. Vorhandene Spielstände bleiben erhalten. Die Ausblicke auf Helvetier, Bern, Zürich, Rom und Helvetia sind ausdrücklich Vergleiche und keine automatische ethnische Zuschreibung aller Funde von La Tène.
+Die Ausblicke auf Helvetier, Bern, Zürich, Rom und Helvetia bleiben Vergleiche und keine automatische ethnische Zuschreibung aller Funde von La Tène.
+
+## Prüfung der Spielfassung
+
+Browserprüfung: Grabungsablauf inklusive falscher Koordinate, alle 36 Aufgabenhandler, zwölf Aktenstücke, Beweisverbindungen und Speicherung nach Neuladen, Textdownload mit Fundakte, alle zwölf Ansichten bei 390 Pixeln ohne horizontalen Überlauf. JavaScript-Syntax und Fehlerkonsole geprüft.
