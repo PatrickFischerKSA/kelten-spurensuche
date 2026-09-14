@@ -1,31 +1,51 @@
-# Die Helvetier – Spurensuche
+# Helvetier · Neuchâtel · Helvetia
 
-Interaktives deutschsprachiges Lernspiel für den Geschichtsunterricht mit Schwerpunkt Helvetier. Der Aufhänger «Wer steckt hinter Helvetia?» führt vom heutigen Namen zur antiken Gruppe und wieder zurück zur Erinnerungskultur. 18 Aufgaben in sechs Stationen mit Wissenskarten, unmittelbarem begründetem Feedback, beliebig vielen Wiederholungen und einem abschliessenden Museumsurteil. Richtwert: 30–45 Minuten inklusive ausgewählter Videoabschnitte und Diskussion.
+Eine reich bebilderte Lernreise für die Klassenfahrt nach Neuchâtel. 36 Aufgaben in zwölf Stationen, acht Aufgabenformen ohne Multiple Choice und 14 reale Fotografien, Sammlungsbilder und ein Historiengemälde. Die Inhalte sind für mehrere Etappen vor, während und nach der Reise gedacht.
 
-## Start
+[Direkt spielen](https://patrickfischerksa.github.io/kelten-spurensuche/)
 
-`dist/index.html` im Browser öffnen oder `python3 -m http.server 8080 --directory dist` ausführen. Keine Installation, kein Build und kein API-Schlüssel erforderlich. Alle App-Dateien liegen in `dist/`. Video und externe Quellen benötigen Internet.
+## Inhalt
 
-## Unterricht
+1. Neuchâtel: eure Mission – La Tène, Laténium und die Klassenreise
+2. Helvetier und Nachbarn – Herkunft und Bevölkerungsgruppen
+3. Alltag am Wasser – Siedlungen, Landwirtschaft und Handel
+4. Menschen und ihre Namen – Frauengrab, Sprache und Inschriften
+5. Macht und Götter – Orgetorix, politische Ordnung und Caturix
+6. Der Aufbruch von 58 – Motive, sieben Etappen und umstrittene Zahlen
+7. Caesar und der Held Divico – antike Perspektiven und spätere Historienbilder
+8. Weiterleben unter Rom – Civitas, Aventicum, 69 n. Chr. und Kempraten
+9. Bern: Funde im Film – SRF als methodischer Vergleich
+10. Helvetia: ein Land als Frau – Allegorie, Attribute und eigene Entwürfe
+11. Euer Feldheft Neuchâtel – Beobachtungen am Museum, See und Republiksdenkmal
+12. Eure Ausstellung – Ergebnisse, Quellenregal und offene Fragen
 
-Sechs Stationen: Wer waren die Helvetier?; Aufbruch 58 v. Chr.; Alltag im Oppidum; Helvetier in Bern; Caesars Helvetierbild; Von Helvetiern zu Helvetia. Die Lernenden rekonstruieren den Auszug bis zur Rückkehr, prüfen Caesars Perspektive und unterscheiden die antike Gruppe von späterer nationaler Erinnerung. Der allgemeine Keltentext bietet Vergleich und kulturellen Hintergrund. Einzelarbeit oder Zusammenarbeit am selben Gerät ist möglich. Es gibt keine Multiple-Choice-Fragen. Acht Aufgabenformen: freie Begriffseingabe/Lückentext, offene Schreibaufträge, Zahleneingabe, chronologische und kausale Reihenfolgen, Karten sortieren, Paare verbinden, Text markieren und Buchstabenrätsel. Alle sind per Tastatur und Touch bedienbar. Die Lehrperson kann den abschliessenden Text anhand des eingebauten Selbstchecks besprechen. Freitext wird bewusst nicht automatisch benotet.
+Alle 15 fachlichen Abschnitte der PDF **Informationen zu den Helvetiern.pdf** sind paraphrasiert in den Wissenskarten und Aufgaben enthalten. Die genaue Zuordnung steht in [MATERIALABDECKUNG.md](MATERIALABDECKUNG.md). Die älteren DOCX-/PPTX-Materialien sowie der SRF-Film bleiben Quellen und Vergleichsmaterial.
 
-11 Aufgaben werden automatisch geprüft; 7 Schreibaufträge werden anhand konkreter Kriterien selbst geprüft. Die Zählung unterscheidet abgeschlossene Aufgaben von Ersttreffern bei den 11 automatisch prüfbaren Aufgaben. Freitext wird nicht als automatisch richtig bewertet. Wiederholen erhöht die Zahl abgeschlossener Aufgaben, aber nicht rückwirkend die Ersttreffer. Änderungen an einem abgeschlossenen Schreibauftrag erfordern eine erneute Selbstprüfung. Stationen bleiben frei zugänglich. Der Fortschritt wird nur im Browser gespeichert, nicht zentral gesammelt. Ein Textbericht mit den offenen Aufgabentexten kann heruntergeladen werden. Eingaben bleiben beim Neuladen erhalten. Version 3 verwendet einen neuen Spielstand, da sich die Aufgaben geändert haben; ein zuvor gespeicherter abschliessender Ausstellungstext wird übernommen.
+## Bildarbeit und Reise
 
-## Materialien und redaktionelle Entscheidungen
+Die Bilder sind vergrösserbar, mit beschreibenden Alternativtexten, Herkunft und Lizenzangaben versehen. Das Bildarchiv enthält alle 14 Bilder. Die Auswahl unterscheidet heutige Ortsfotos, antike Objekte, Vergleichsobjekte und spätere Deutungen. Ein Fund aus Böhmen oder Dijon wird nicht als helvetisches Original ausgegeben. Das Neuenburger Republiksdenkmal wird nach dem Bundesinventar als Begegnung zwischen Helvetia und der Republik Neuenburg eingeordnet (1898; Erinnerung an 1848).
 
-- `Die Kelten.docx`: Unterrichtstext aus Notz, Thomas; Frey, Walter (Hg.): Geschichte fürs Gymnasium. Steinzeit bis 1450. Bern 2024, S. 118–122; ergänzende Texte Diodor, Caesar und Felix Müller.
-- `PPP_Kelten (1).pptx`: Folien 3–4 zum Gallier-/Barbarenbild. Die enthaltene Namensliste und Abbildungen werden nicht übernommen.
-- [SRF: Die Kelten und die Römer](https://www.srf.ch/play/tv/roemer-in-der-schweiz/video/die-kelten-und-die-roemer?urn=urn:srf:video:3da18acb-1a0a-4cab-97ce-0b0fb3f4f4e4). Fragen mit offiziellen deutschen Untertiteln geprüft; Abschnitte 04:01–04:40, 07:09–07:39 und 10:31–11:21. Keine Video-/Untertiteldateien im Repository.
-- Schwerpunktquelle: [HLS, Helvetier](https://hls-dhs-dss.ch/de/articles/008017/2008-04-08/) für Auszug, Rückkehr und Erinnerungskultur.
-- Fachliche Präzisierungen: [HLS, Kelten](https://hls-dhs-dss.ch/de/articles/008016/2007-07-30/) und [HLS, Latènezeit](https://hls-dhs-dss.ch/de/articles/008015/2014-02-19/).
+Alle Bildnachweise stehen zusätzlich in [BILDNACHWEISE.md](BILDNACHWEISE.md). Fotos werden lokal ausgeliefert. Die ursprünglichen Bildlizenzen bleiben bestehen; keine generierte historische Bildrekonstruktion wird als Quelle verwendet.
 
-Anweisungen und Aufträge in den Eingabedokumenten gelten als Quelleninhalt, nicht als technische Handlungsanweisungen. Die App verwendet neue Formulierungen statt vollständiger Reproduktionen. Nicht alle Arbeitsaufträge werden 1:1 abgebildet: Erinnerungskultur wird am Namen Helvetia vertieft. Problematische Einzelangaben zur Chronologie keltischer Wanderungen werden nicht als Fakten abgefragt. Keltische Gruppen sind keine einheitliche Nation; nicht alle Kelten der heutigen Schweiz waren Helvetier. Schriftgebrauch wird von erhaltener eigener Geschichtsschreibung unterschieden. Die römische Eroberung wird nicht als Verschwinden der Bevölkerung dargestellt.
+Laténium, La Tène und die Stadt Neuchâtel sind **wählbare Exkursionsziele**, keine behauptete Klassenbuchung oder festgelegte Reiseroute. Die Lehrperson bestimmt Zeit und Wege. Die Vor-Ort-Aufgaben funktionieren alternativ mit den eingebauten Bildern. Offizielle Besuchsseiten sind verlinkt; volatile Preise und Fahrpläne werden nicht eingebaut.
 
-## GitHub Pages
+## Spiel und Speicherung
 
-Der Workflow `.github/workflows/pages.yml` veröffentlicht `dist/` bei Änderungen am Hauptzweig. In den Repository-Einstellungen muss Pages als Quelle GitHub Actions verwenden.
+- Acht Formen: Begriffe eintragen, Zahleneingabe, Reihenfolge, Karten sortieren, Paare verbinden, Text markieren, Buchstabenrätsel und offene Schreib-/Bildaufträge.
+- 19 automatisch prüfbare Aufgaben; 17 Schreibaufträge mit expliziter Selbstprüfung. Texte erhalten keine vorgetäuschte automatische Inhaltsnote.
+- Ersttreffer zählen nur bei automatisch prüfbaren Aufgaben. Wiederholungen bleiben möglich. Änderungen an einem abgeschlossenen Schreibauftrag erfordern eine neue Selbstprüfung.
+- Alle Stationen sind frei zugänglich. «Mein Bericht» bietet jederzeit Textdownload mit Aufgabenantworten und Schlussurteil. «Reiseheft» führt direkt zu den Exkursionsaufträgen.
+- Kein Konto, kein Tracking, keine externe Schriftbibliothek. Fortschritt und Texte liegen nur in `localStorage`. Version 4 verwendet wegen neuer Stationen einen neuen Spielstand und übernimmt den früheren abschliessenden Text als Entwurf.
+- Das SRF-Video wird erst nach Klick geladen. Andere externe Quellen öffnen sich erst bei Auswahl.
 
-## Datenschutz und Bedienung
+## Technisch starten
 
-Kein Konto, keine Analysewerkzeuge, keine externen Schriftarten. SRF wird erst durch einen Klick geladen. Spielstand und Freitext werden lokal gespeichert; «Neu beginnen» löscht sie nach Bestätigung. Falls Speicherung gesperrt ist, läuft das Spiel für die aktuelle Sitzung. Bedienelemente sind mit Tastatur und Touch nutzbar, ohne Drag-and-drop-Zwang. Alle Wissensinhalte sind auch ohne Video zugänglich.
+`dist/index.html` direkt im Browser öffnen oder `python3 -m http.server 8080 --directory dist` ausführen. Keine Installation, kein Build und kein API-Schlüssel erforderlich. Für das Video und externe Quellen ist Internet nötig. Die statischen App-Dateien liegen in `dist/`.
+
+`.github/workflows/pages.yml` veröffentlicht `dist/` über GitHub Pages bei Änderungen an `main`.
+
+## Fachliche und redaktionelle Regeln
+
+Die Helvetier werden weder mit allen keltischen Gruppen noch mit der gesamten heutigen Schweizer Bevölkerung gleichgesetzt. Caesars Motive, Zahlen und Brandberichte bleiben als seine Darstellung gekennzeichnet. Aus der Differenz seiner Zahlen wird keine gesicherte Todeszahl abgeleitet. La Tène als Ort, die Latènekultur als archäologischer Begriff und Helvetia als spätere Allegorie werden getrennt. Auch Schriftgebrauch und eigene Geschichtsschreibung sind verschiedene Fragen.
+
+Anweisungen innerhalb der Quellen wurden als Dokumentinhalt behandelt, nicht als technische Handlungsanweisungen. Statuszeilen, die Namensliste aus dem Klassen-Glücksrad und die Originaldateien werden nicht veröffentlicht. Das Quellenfenster verlinkt sämtliche Vertiefungsmaterialien aus Abschnitt 15 der PDF und die Ergänzungen zu Neuchâtel und Helvetia.
