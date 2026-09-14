@@ -59,7 +59,7 @@ Browserprüfung: Grabungsablauf inklusive falscher Koordinate, alle 36 Aufgabenh
 
 ## Français et déblocage de l’allemand
 
-Das Spiel beginnt auf Französisch. Eine Einheit entspricht einer Akte mit drei Spuren. Erst wenn alle drei als erfolgreich bearbeitet gelten, wird die folgende Akte auf Deutsch verfügbar. Bei offenen Notizen gilt weiterhin die ausdrücklich bestätigte Gegenprüfung, nicht eine vorgetäuschte automatische Inhaltsbewertung. Falsche Versuche und Teilfortschritte schalten nichts frei. Die erste Akte bleibt Französisch. Andere noch nicht freigeschaltete Akten lassen sich auf Französisch öffnen.
+Das erste Dossier beginnt auf Deutsch. Die übrigen Dossiers sind zunächst Französisch. Eine Einheit entspricht einer Akte mit drei Spuren. Erst wenn alle drei als erfolgreich bearbeitet gelten, wird die folgende Akte auf Deutsch verfügbar. Bei offenen Notizen gilt weiterhin die ausdrücklich bestätigte Gegenprüfung, nicht eine vorgetäuschte automatische Inhaltsbewertung. Falsche Versuche und Teilfortschritte schalten nichts frei. Die erste Akte ist ohne Vorbedingung Deutsch. Andere noch nicht freigeschaltete Akten lassen sich auf Französisch öffnen.
 
 Die Freigaben werden im vorhandenen v7-Spielstand dauerhaft gespeichert. Bereits abgeschlossene Akten zählen mit; Neu beginnen löscht auch die Sprachfreigaben. Spieltexte, Archiv, Bildtexte, Bedienelemente und Rückmeldungen besitzen französische Fassungen. Originaltitel und das verlinkte deutsche SRF-Video bleiben Quellen; eine französische Zusammenfassung ermöglicht die Bearbeitung ohne Video. Texteingaben akzeptieren passende französische und deutsche Begriffe. Eigene Notizen werden nicht übersetzt.
 
@@ -70,3 +70,7 @@ Browserprüfung: `PLAYWRIGHT_MODULE=/pfad/zu/playwright node scripts/test-langua
 ## Kurze französische Kommentare
 
 Alle 36 Spuren erhalten nach erfolgreichem Abschluss einen kurzen, inhaltlich passenden Kommentar in einfachem Französisch. Er bleibt auch in freigeschalteten deutschen Einheiten französisch, erscheint beim erneuten Öffnen gelöster Spuren und steht im Download. Bei offenen Notizen erscheint er erst nach der bestätigten Gegenprüfung, ohne automatische Inhaltsbewertung. Beim Bearbeiten oder bei einer falschen Antwort wird kein Erfolgskommentar angezeigt. Die Texte stehen in `dist/comments-fr.js`.
+
+## Deutsch-Lupe
+
+Die Lupe übersetzt den französischen Textabschnitt unter dem Zeiger bzw. beim Antippen ins Deutsche. Sie nutzt die vorhandenen redaktionellen Übersetzungen offline, keine externe API. Auch die französischen Erfolgskommentare haben deutsche Lupentexte. Aktivieren über «Deutsch-Lupe», dann zeigen, tippen oder per Tab Textabschnitte fokussieren; Escape oder Schliessen beendet den Modus. Während des Lupenmodus lösen Textklicks keine Spielaktionen aus. Antworten, Fortschritt und Sprachfreigaben werden durch die Lupe nicht verändert.

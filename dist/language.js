@@ -6,7 +6,7 @@ const translatedNodes=new WeakMap();
 const translatedAttributes=new WeakMap();
 const uiPattern=new RegExp(Object.keys(uiFR).sort((a,b)=>b.length-a.length).map(s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
 function tr(text,language=gameLanguage){return language==='fr'?String(text).replace(uiPattern,m=>uiFR[m]):String(text);}
-function germanAvailable(i){return i>0&&state.germanUnlocked.includes(i);}
+function germanAvailable(i){return i===0||state.germanUnlocked.includes(i);}
 function syncLanguage(){
  gameLanguage=germanAvailable(state.station)?'de':'fr';
  stations=stationsDE.map((s,i)=>germanAvailable(i)?s:stationsFR[i]);
@@ -32,7 +32,7 @@ function languageBanner(){
  if(showResult||!document.querySelector('.station-lead')){banner?.remove();return;}
  if(!banner){banner=document.createElement('div');banner.className='language-status';document.querySelector('.station-lead').before(banner);}
  const i=state.station,nextId=i+1,n=String(nextId+1).padStart(2,'0'),unlocked=nextId<stations.length&&germanAvailable(nextId),done=caseDone(i);
- let text=gameLanguage==='fr'?'Dossier en français.':'Deutsch freigeschaltet · Akte '+String(i).padStart(2,'0')+' gelöst.';
+ let text=i===0?'Das erste Dossier ist von Beginn an auf Deutsch.':gameLanguage==='fr'?'Dossier en français.':'Deutsch freigeschaltet · Akte '+String(i).padStart(2,'0')+' gelöst.';
  if(nextId<stations.length)text+=gameLanguage==='fr'?(unlocked?` Le dossier ${n} est maintenant disponible en allemand.`:` Résolvez les 3 indices pour débloquer le dossier ${n} en allemand.`):(unlocked?` Akte ${n} ist ebenfalls auf Deutsch verfügbar.`:` Löst alle 3 Spuren, um Akte ${n} auf Deutsch freizuschalten.`);
  else text+=gameLanguage==='fr'?' Réunissez les dernières preuves pour terminer votre dossier.':'Führt eure letzten Belege zur Schlussdeutung zusammen.';
  banner.innerHTML=`<span class="language-badge">${gameLanguage.toUpperCase()}</span><span>${text}</span>${done&&nextId<stations.length?`<button class="quiet" id="nextGerman">${gameLanguage==='fr'?'Continuer en allemand →':'Weiter auf Deutsch →'}</button>`:''}`;
@@ -57,11 +57,11 @@ function initLanguage(){
  for(let i=0;i<stationsDE.length-1;i++)if(stationsDE[i].tasks.every((_,j)=>state.results[`${i}-${j}`]?.correct)&&!state.germanUnlocked.includes(i+1))state.germanUnlocked.push(i+1);
  // Accept both languages without changing the positional puzzle solutions.
  stationsDE.forEach((s,i)=>s.tasks.forEach((task,j)=>{if(task.type==='text')task.fields.forEach((f,k)=>{const other=stationsFR[i].tasks[j].fields[k];const deAccept=[...f.accept],frAccept=[...other.accept];f.accept=[...new Set([...deAccept,...frAccept])];other.accept=[...new Set([...frAccept,...deAccept])];});}));
- const originalRender=render;render=function(){syncLanguage();originalRender();languageBanner();localizeDOM();document.documentElement.classList.remove('language-loading');};
+ const originalRender=render;render=function(){syncLanguage();originalRender();languageBanner();localizeDOM();document.documentElement.classList.remove('language-loading');if(typeof refreshLens==='function')refreshLens();};
  const originalSidebar=sidebar;sidebar=function(){syncLanguage();originalSidebar();localizeDOM();};
  const originalComplete=complete;complete=function(correct,self=false){originalComplete(correct,self);if(correct&&caseDone(state.station)&&state.station<stationsDE.length-1&&!state.germanUnlocked.includes(state.station+1)){state.germanUnlocked.push(state.station+1);save();sidebar();}languageBanner();localizeDOM();};
  const originalResult=renderResult;renderResult=function(){originalResult();document.querySelector('#download').onclick=localizedReport;localizeDOM();};
  // Dynamic feedback, image dialogs and keyboard-operated controls keep the active locale.
  new MutationObserver(()=>localizeDOM()).observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['aria-label','placeholder','title','alt']});
- syncLanguage();save();
+ syncLanguage();save();initLens();
 }
