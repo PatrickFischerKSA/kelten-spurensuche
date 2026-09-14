@@ -4,7 +4,8 @@ const stationsDE=stations;
 const imageArchiveDE=imageArchive;
 const translatedNodes=new WeakMap();
 const translatedAttributes=new WeakMap();
-const uiPattern=new RegExp(Object.keys(uiFR).sort((a,b)=>b.length-a.length).map(s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
+const quotePattern=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+const uiPattern=new RegExp(Object.keys(uiFR).sort((a,b)=>b.length-a.length).map(s=>(/^[A-Za-zÀ-ÿ0-9]/.test(s)?'(?<![A-Za-zÀ-ÿ0-9])':'')+quotePattern(s)+(/[A-Za-zÀ-ÿ0-9]$/.test(s)?'(?![A-Za-zÀ-ÿ0-9])':'')).join('|'),'g');
 function tr(text,language=gameLanguage){return language==='fr'?String(text).replace(uiPattern,m=>uiFR[m]):String(text);}
 function germanAvailable(i){return i===0||state.germanUnlocked.includes(i);}
 function syncLanguage(){
@@ -20,24 +21,16 @@ function localizeDOM(){
  while(node=walker.nextNode()){
   if(node.parentElement?.closest('script,style,textarea,[data-user-text],[data-fixed-language]'))continue;
   const old=translatedNodes.get(node),raw=old&&old.output===node.data?old.raw:node.data;
-  const output=tr(raw);if(node.data!==output)node.data=output;translatedNodes.set(node,{raw,output});
+  const output=tr(raw,node.parentElement?.closest('[data-archive-fr]')?'fr':gameLanguage);if(node.data!==output)node.data=output;translatedNodes.set(node,{raw,output});
  }
  document.querySelectorAll('[aria-label],[placeholder],[title],[alt]').forEach(el=>{
   if(el.closest('[data-fixed-language]'))return;let saved=translatedAttributes.get(el)||{};
-  for(const attr of ['aria-label','placeholder','title','alt']){if(!el.hasAttribute(attr))continue;const value=el.getAttribute(attr),old=saved[attr],raw=old&&old.output===value?old.raw:value,output=tr(raw);if(value!==output)el.setAttribute(attr,output);saved[attr]={raw,output};}translatedAttributes.set(el,saved);
+  for(const attr of ['aria-label','placeholder','title','alt']){if(!el.hasAttribute(attr))continue;const value=el.getAttribute(attr),old=saved[attr],raw=old&&old.output===value?old.raw:value,output=tr(raw,el.closest('[data-archive-fr]')?'fr':gameLanguage);if(value!==output)el.setAttribute(attr,output);saved[attr]={raw,output};}translatedAttributes.set(el,saved);
  });
 }
 function languageBanner(){
- let banner=document.querySelector('.language-status');
- if(showResult||!document.querySelector('.station-lead')){banner?.remove();return;}
- if(!banner){banner=document.createElement('div');banner.className='language-status';document.querySelector('.station-lead').before(banner);}
- const i=state.station,nextId=i+1,n=String(nextId+1).padStart(2,'0'),unlocked=nextId<stations.length&&germanAvailable(nextId),done=caseDone(i);
- let text=i===0?'Das erste Dossier ist von Beginn an auf Deutsch.':gameLanguage==='fr'?'Dossier en français.':'Deutsch freigeschaltet · Akte '+String(i).padStart(2,'0')+' gelöst.';
- if(nextId<stations.length)text+=gameLanguage==='fr'?(unlocked?` Le dossier ${n} est maintenant disponible en allemand.`:` Résolvez les 3 indices pour débloquer le dossier ${n} en allemand.`):(unlocked?` Akte ${n} ist ebenfalls auf Deutsch verfügbar.`:` Löst alle 3 Spuren, um Akte ${n} auf Deutsch freizuschalten.`);
- else text+=gameLanguage==='fr'?' Réunissez les dernières preuves pour terminer votre dossier.':'Führt eure letzten Belege zur Schlussdeutung zusammen.';
- banner.innerHTML=`<span class="language-badge">${gameLanguage.toUpperCase()}</span><span>${text}</span>${done&&nextId<stations.length?`<button class="quiet" id="nextGerman">${gameLanguage==='fr'?'Continuer en allemand →':'Weiter auf Deutsch →'}</button>`:''}`;
- if(document.querySelector('#nextGerman'))document.querySelector('#nextGerman').onclick=()=>start(nextId);
- document.querySelectorAll('[data-station]').forEach(el=>{const i=+el.dataset.station;const badge=document.createElement('small');badge.className='nav-language';badge.textContent=germanAvailable(i)?'DE':'FR';el.append(badge);});
+ document.querySelector('.language-status')?.remove();
+ document.querySelectorAll('[data-station]').forEach(el=>{el.querySelector('.nav-language')?.remove();const badge=document.createElement('small');badge.className='nav-language';badge.textContent=germanAvailable(+el.dataset.station)?'DE':'FR';el.append(badge);});
 }
 function localizedReport(){
  const isFR=gameLanguage==='fr',lines=[document.title,isFR?'DOSSIER DE FOUILLE':'FUNDAKTE',''];

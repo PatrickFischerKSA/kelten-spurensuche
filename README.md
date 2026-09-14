@@ -74,3 +74,7 @@ Alle 36 Spuren erhalten nach erfolgreichem Abschluss einen kurzen, inhaltlich pa
 ## Deutsch-Lupe
 
 Die Lupe übersetzt den französischen Textabschnitt unter dem Zeiger bzw. beim Antippen ins Deutsche. Sie nutzt die vorhandenen redaktionellen Übersetzungen offline, keine externe API. Auch die französischen Erfolgskommentare haben deutsche Lupentexte. Aktivieren über «Deutsch-Lupe», dann zeigen, tippen oder per Tab Textabschnitte fokussieren; Escape oder Schliessen beendet den Modus. Während des Lupenmodus lösen Textklicks keine Spielaktionen aus. Antworten, Fortschritt und Sprachfreigaben werden durch die Lupe nicht verändert.
+
+## Archive
+
+Die aufklappbaren Archive, ihre Bildtexte sowie Bildarchiv und Quellenfenster bleiben unabhängig von der Dossiersprache französisch. Die Deutsch-Lupe übersetzt diese Inhalte bei Bedarf. Der Freischaltungshinweis oberhalb des Dossiers entfällt; die bestehende Sprachfreigabe arbeitet weiter im Hintergrund.
