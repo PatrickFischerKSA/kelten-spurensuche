@@ -1,4 +1,4 @@
-# La Tène – Was der See verrät
+# La Tène – Unter der Oberfläche
 
 Eine reich bebilderte Spurensuche für die Klassenfahrt nach Neuchâtel, aufgebaut auf dem Fundort La Tène. Der rote Faden führt vom Objekt zu seinen möglichen Benutzern, zu antiken Berichten und späteren Schweizer Geschichtsbildern. 36 Aufgaben in zwölf Stationen, acht Aufgabenformen ohne Multiple Choice und 14 reale Fotografien, Sammlungsbilder und ein Historiengemälde. Die Inhalte sind für mehrere Etappen vor, während und nach der Reise gedacht.
 
@@ -6,7 +6,7 @@ Eine reich bebilderte Spurensuche für die Klassenfahrt nach Neuchâtel, aufgeba
 
 ## Inhalt
 
-1. Was der See verrät
+1. Unter der Oberfläche
 2. Wer steckt hinter den Funden?
 3. Ein Werkzeug, eine ganze Welt
 4. Was von einem Menschen bleibt
