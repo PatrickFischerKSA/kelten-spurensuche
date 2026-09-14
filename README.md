@@ -1,23 +1,23 @@
-# Helvetier · Neuchâtel · Helvetia
+# La Tène – Was der See verrät
 
-Eine reich bebilderte Lernreise für die Klassenfahrt nach Neuchâtel. 36 Aufgaben in zwölf Stationen, acht Aufgabenformen ohne Multiple Choice und 14 reale Fotografien, Sammlungsbilder und ein Historiengemälde. Die Inhalte sind für mehrere Etappen vor, während und nach der Reise gedacht.
+Eine reich bebilderte Spurensuche für die Klassenfahrt nach Neuchâtel, aufgebaut auf dem Fundort La Tène. Der rote Faden führt vom Objekt zu seinen möglichen Benutzern, zu antiken Berichten und späteren Schweizer Geschichtsbildern. 36 Aufgaben in zwölf Stationen, acht Aufgabenformen ohne Multiple Choice und 14 reale Fotografien, Sammlungsbilder und ein Historiengemälde. Die Inhalte sind für mehrere Etappen vor, während und nach der Reise gedacht.
 
 [Direkt spielen](https://patrickfischerksa.github.io/kelten-spurensuche/)
 
 ## Inhalt
 
-1. Neuchâtel: eure Mission – La Tène, Laténium und die Klassenreise
-2. Helvetier und Nachbarn – Herkunft und Bevölkerungsgruppen
-3. Alltag am Wasser – Siedlungen, Landwirtschaft und Handel
-4. Menschen und ihre Namen – Frauengrab, Sprache und Inschriften
-5. Macht und Götter – Orgetorix, politische Ordnung und Caturix
-6. Der Aufbruch von 58 – Motive, sieben Etappen und umstrittene Zahlen
-7. Caesar und der Held Divico – antike Perspektiven und spätere Historienbilder
-8. Weiterleben unter Rom – Civitas, Aventicum, 69 n. Chr. und Kempraten
-9. Bern: Funde im Film – SRF als methodischer Vergleich
-10. Helvetia: ein Land als Frau – Allegorie, Attribute und eigene Entwürfe
-11. Euer Feldheft Neuchâtel – Beobachtungen am Museum, See und Republiksdenkmal
-12. Eure Ausstellung – Ergebnisse, Quellenregal und offene Fragen
+1. Was der See verrät
+2. Wer steckt hinter den Funden?
+3. Ein Werkzeug, eine ganze Welt
+4. Was von einem Menschen bleibt
+5. Gabe, Besitz oder Machtzeichen?
+6. Als die Helvetier aufbrachen
+7. Wer darf Geschichte erzählen?
+8. Nach der Schlacht geht das Leben weiter
+9. Den Spuren auf den Grund gehen
+10. Aus einem Namen wird eine Figur
+11. Jetzt seid ihr am Zug
+12. Was ihr dem See ablest
 
 Alle 15 fachlichen Abschnitte der PDF **Informationen zu den Helvetiern.pdf** sind paraphrasiert in den Wissenskarten und Aufgaben enthalten. Die genaue Zuordnung steht in [MATERIALABDECKUNG.md](MATERIALABDECKUNG.md). Die älteren DOCX-/PPTX-Materialien sowie der SRF-Film bleiben Quellen und Vergleichsmaterial.
 
@@ -49,3 +49,5 @@ Laténium, La Tène und die Stadt Neuchâtel sind **wählbare Exkursionsziele**,
 Die Helvetier werden weder mit allen keltischen Gruppen noch mit der gesamten heutigen Schweizer Bevölkerung gleichgesetzt. Caesars Motive, Zahlen und Brandberichte bleiben als seine Darstellung gekennzeichnet. Aus der Differenz seiner Zahlen wird keine gesicherte Todeszahl abgeleitet. La Tène als Ort, die Latènekultur als archäologischer Begriff und Helvetia als spätere Allegorie werden getrennt. Auch Schriftgebrauch und eigene Geschichtsschreibung sind verschiedene Fragen.
 
 Anweisungen innerhalb der Quellen wurden als Dokumentinhalt behandelt, nicht als technische Handlungsanweisungen. Statuszeilen, die Namensliste aus dem Klassen-Glücksrad und die Originaldateien werden nicht veröffentlicht. Das Quellenfenster verlinkt sämtliche Vertiefungsmaterialien aus Abschnitt 15 der PDF und die Ergänzungen zu Neuchâtel und Helvetia.
+
+Die Neurahmung um La Tène verändert keine Lösungsschlüssel oder Aufgabenpositionen. Vorhandene Spielstände bleiben erhalten. Die Ausblicke auf Helvetier, Bern, Zürich, Rom und Helvetia sind ausdrücklich Vergleiche und keine automatische ethnische Zuschreibung aller Funde von La Tène.

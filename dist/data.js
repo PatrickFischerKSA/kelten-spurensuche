@@ -1,12 +1,16 @@
 const SRF="https://www.srf.ch/play/tv/roemer-in-der-schweiz/video/die-kelten-und-die-roemer?urn=urn:srf:video:3da18acb-1a0a-4cab-97ce-0b0fb3f4f4e4";
 const stations=[
   {
-    "title": "Neuchâtel: eure Mission",
-    "tag": "VOR DER REISE · AM NEUENBURGERSEE",
-    "intro": "Eure Klasse reist nach Neuchâtel. Hier gab ein Fundort einer ganzen Epoche ihren Namen. Entschlüsselt zuerst La Tène – und fragt dann, was diese Spuren über die Helvetier und über unser Bild der Schweiz verraten.",
+    "title": "Was der See verrät",
+    "tag": "LA TÈNE · DER ANFANG EINER SPURENSUCHE",
+    "intro": "Schwerter, Fibeln, Werkzeuge: Bei La Tène am Neuenburgersee kamen Dinge ans Licht, die einer ganzen Epoche ihren Namen gaben. Wer benutzte sie? Warum gelangten sie ins Wasser? Und wie wird aus solchen Spuren eine Geschichte über die Helvetier – oder sogar über die Schweiz?",
     "knowledge": [
       {
-        "title": "Drei Orte, drei Fragen",
+        "title": "Warum lagen diese Dinge im Wasser?",
+        "text": "Viele Funde von La Tène stammen aus einem ehemaligen Arm der Thielle/Zihl. Dazu gehören Waffen, Werkzeuge und Schmuck. Der nasse Boden konnte auch organische Materialien erhalten. Religiöse Niederlegungen sind eine wichtige Deutung des Fundplatzes; seine Funktion wurde und wird diskutiert. Ein einzelnes Fundstück beweist noch keinen genauen Ritualablauf und benennt nicht automatisch eine helvetische Person."
+      },
+      {
+        "title": "Vom Fundort ins Museum",
         "text": "Neuchâtel ist eure Reisestadt am Neuenburgersee. Das Laténium liegt in Hauterive und verbindet Museum und archäologischen Park. Der Fundort La Tène liegt weiter östlich bei Marin-Epagnier an der Thielle/Zihl. Museum und Fundort sind nicht derselbe Ort. Diese Stationen sind Vorschläge für eure Klassenreise, keine bereits festgelegte Route."
       },
       {
@@ -14,15 +18,15 @@ const stations=[
         "text": "1857 wurden bei La Tène bedeutende Funde entdeckt. La Tène bezeichnet zunächst diesen Ort, Latènezeit beziehungsweise Latènekultur auch einen archäologischen Zeit- und Kulturzusammenhang der jüngeren Eisenzeit. Daraus folgt nicht, dass jedes Objekt der Latènekultur den Helvetiern gehörte. Der ältere Keltentext bietet dazu den Vergleich mit der Hallstattkultur."
       },
       {
-        "title": "So arbeitet ihr",
-        "text": "Vor der Reise baut ihr euer Wissen auf. Vor Ort oder anhand der Bilder führt ihr ein Fundprotokoll. Danach gestaltet ihr eine eigene Deutung der Helvetier und eine zeitgemässe Helvetia. Wissen, Bilder und Quellen stehen jederzeit offen; Schreibaufgaben werden anhand von Kriterien selbst geprüft."
+        "title": "Euer Weg durch die Spuren",
+        "text": "La Tène bleibt euer Ausgangspunkt: Ihr untersucht Gegenstände, fragt nach Menschen und vergleicht Funde mit Texten und Bildern. Ausblicke nach Zürich, Bern und Avenches helfen beim Einordnen. Am Ende kehrt ihr mit einem eigenen Urteil zu La Tène zurück. Wissen, Bilder und Quellen stehen jederzeit offen; Schreibaufgaben werden anhand von Kriterien selbst geprüft."
       }
     ],
-    "note": "Neuchâtel ist eure Reisestadt am Neuenburgersee. Das Laténium liegt in Hauterive und verbindet Museum und archäologischen Park. Der Fundort La Tène liegt weiter östlich bei Marin-Epagnier an der Thielle/Zihl. Museum und Fundort sind nicht derselbe Ort. Diese Stationen sind Vorschläge für eure Klassenreise, keine bereits festgelegte Route. 1857 wurden bei La Tène bedeutende Funde entdeckt. La Tène bezeichnet zunächst diesen Ort, Latènezeit beziehungsweise Latènekultur auch einen archäologischen Zeit- und Kulturzusammenhang der jüngeren Eisenzeit. Daraus folgt nicht, dass jedes Objekt der Latènekultur den Helvetiern gehörte. Der ältere Keltentext bietet dazu den Vergleich mit der Hallstattkultur. Vor der Reise baut ihr euer Wissen auf. Vor Ort oder anhand der Bilder führt ihr ein Fundprotokoll. Danach gestaltet ihr eine eigene Deutung der Helvetier und eine zeitgemässe Helvetia. Wissen, Bilder und Quellen stehen jederzeit offen; Schreibaufgaben werden anhand von Kriterien selbst geprüft.",
+    "note": "Viele Funde von La Tène stammen aus einem ehemaligen Arm der Thielle/Zihl. Dazu gehören Waffen, Werkzeuge und Schmuck. Der nasse Boden konnte auch organische Materialien erhalten. Religiöse Niederlegungen sind eine wichtige Deutung des Fundplatzes; seine Funktion wurde und wird diskutiert. Ein einzelnes Fundstück beweist noch keinen genauen Ritualablauf und benennt nicht automatisch eine helvetische Person. Neuchâtel ist eure Reisestadt am Neuenburgersee. Das Laténium liegt in Hauterive und verbindet Museum und archäologischen Park. Der Fundort La Tène liegt weiter östlich bei Marin-Epagnier an der Thielle/Zihl. Museum und Fundort sind nicht derselbe Ort. Diese Stationen sind Vorschläge für eure Klassenreise, keine bereits festgelegte Route. 1857 wurden bei La Tène bedeutende Funde entdeckt. La Tène bezeichnet zunächst diesen Ort, Latènezeit beziehungsweise Latènekultur auch einen archäologischen Zeit- und Kulturzusammenhang der jüngeren Eisenzeit. Daraus folgt nicht, dass jedes Objekt der Latènekultur den Helvetiern gehörte. Der ältere Keltentext bietet dazu den Vergleich mit der Hallstattkultur. La Tène bleibt euer Ausgangspunkt: Ihr untersucht Gegenstände, fragt nach Menschen und vergleicht Funde mit Texten und Bildern. Ausblicke nach Zürich, Bern und Avenches helfen beim Einordnen. Am Ende kehrt ihr mit einem eigenen Urteil zu La Tène zurück. Wissen, Bilder und Quellen stehen jederzeit offen; Schreibaufgaben werden anhand von Kriterien selbst geprüft.",
     "tasks": [
       {
         "type": "text",
-        "q": "Ein See, ein Fundort, ein Museum: Ergänze die beiden Namen.",
+        "q": "Der Fund gab einer Epoche den Namen. Das Museum macht die Spuren zugänglich. Ergänze beide Namen.",
         "fields": [
           {
             "label": "Der Fundort, nach dem die jüngere Eisenzeit benannt ist",
@@ -65,15 +69,15 @@ const stations=[
     "source": "Ergänzung zur PDF: HLS, La Tène (Fundort); Laténium, Museum und Park.",
     "pdf": [],
     "images": [
-      "neuchatel",
+      "la-tene",
       "latenium",
-      "la-tene"
+      "neuchatel"
     ]
   },
   {
-    "title": "Helvetier und Nachbarn",
-    "tag": "PDF 1–2 · HERKUNFT UND LEBENSRAUM",
-    "intro": "«Kelten» ist kein Name für einen einheitlichen Staat. Ordne die Helvetier in die vielfältige Bevölkerung des heutigen Schweizer Gebiets ein – ohne heutige Grenzen zurückzuprojizieren.",
+    "title": "Wer steckt hinter den Funden?",
+    "tag": "SPUR 02 · MENSCHEN OHNE NAMENSSCHILD",
+    "intro": "Ein Fund aus La Tène trägt kein Etikett «Helvetier». Bevor ihr Gegenstände einer Gruppe zuschreibt, lernt ihr die Menschen und Nachbarn der keltischen Welt kennen. Wie weit reicht das, was ein Objekt über Herkunft erzählen kann?",
     "knowledge": [
       {
         "title": "Verwandt, aber nicht ein Staat",
@@ -153,9 +157,9 @@ const stations=[
     ]
   },
   {
-    "title": "Alltag am Wasser",
-    "tag": "PDF 3 · WERKSTÄTTEN UND HANDEL",
-    "intro": "Lebensmittel, Werkzeuge und Wege verbinden die helvetischen Siedlungen. Nutzt die Seelandschaft rund um Neuchâtel, um über Versorgung, Austausch und den Schutz einer Siedlung nachzudenken.",
+    "title": "Ein Werkzeug, eine ganze Welt",
+    "tag": "SPUR 03 · ARBEITEN UND HANDELN",
+    "intro": "Hinter jedem Werkzeug stehen Hände, Wissen und Arbeit. Die Funde von La Tène öffnen den Blick auf Landwirtschaft, Handwerk und Austausch. Folgt ihnen vom einzelnen Gegenstand zu den Siedlungen und Verkehrswegen der Helvetier.",
     "knowledge": [
       {
         "title": "Höfe, Dörfer, Oppida",
@@ -238,9 +242,9 @@ const stations=[
     ]
   },
   {
-    "title": "Menschen und ihre Namen",
-    "tag": "PDF 4–5 · GRABFUNDE UND SPRACHE",
-    "intro": "Ein Schmuckstück erzählt etwas über einen Menschen. Ein Name kann über Jahrtausende weiterleben. Aber weder eine Kette noch eine Inschrift liefert automatisch eine vollständige Lebensgeschichte.",
+    "title": "Was von einem Menschen bleibt",
+    "tag": "SPUR 04 · SCHMUCK, GRÄBER, NAMEN",
+    "intro": "Eine Fibel hält Kleidung zusammen; im Museum wird sie zur Spur eines Lebens. Um die Gegenstände von La Tène besser zu verstehen, vergleicht ihr sie mit Grabfunden und Inschriften anderer Orte. Was lässt sich über eine Person sagen – und was nicht?",
     "knowledge": [
       {
         "title": "Die Frau beim Schulhaus Kern",
@@ -325,9 +329,9 @@ const stations=[
     ]
   },
   {
-    "title": "Macht und Götter",
-    "tag": "PDF 6–7 · ORGETORIX UND CATURIX",
-    "intro": "Wer konnte Einfluss ausüben? Und wie verbanden sich religiöse Vorstellungen? Prüfe sorgfältig, aus welcher Zeit und aus welcher Perspektive unsere Informationen stammen.",
+    "title": "Gabe, Besitz oder Machtzeichen?",
+    "tag": "SPUR 05 · GÖTTER UND EINFLUSS",
+    "intro": "Warum legt jemand wertvolle Dinge nieder? La Tène stellt Fragen nach Ritualen und Bedeutung. Erweitert den Blick auf Götter, politische Macht und Orgetorix – und achtet darauf, welche Antworten aus welcher Zeit stammen.",
     "knowledge": [
       {
         "title": "Politik nach Caesar",
@@ -406,9 +410,9 @@ const stations=[
     "imageNote": "Die Bilder zeigen Vergleichsobjekte und eine Münze, keine Darstellung von Caturix oder Orgetorix."
   },
   {
-    "title": "Der Aufbruch von 58",
-    "tag": "PDF 8–10 · EIN ZUG DURCH GALLIEN",
-    "intro": "Rekonstruiere den Weg vom Aufbruch bis zur Rückkehr. Die Erzählung klingt präzise, doch gerade Motive und Zahlen müssen geprüft werden.",
+    "title": "Als die Helvetier aufbrachen",
+    "tag": "SPUR 06 · DER WEG VON 58 V. CHR.",
+    "intro": "Die Gegenstände erzählen vom Leben; Caesar erzählt vom Krieg. Verlasst für einen Moment den Fundort und verfolgt den Auszug der Helvetier. Prüft den Weg, die Motive und die Zahlen, bevor ihr den Bericht mit den archäologischen Spuren verbindet.",
     "knowledge": [
       {
         "title": "Warum aufbrechen?",
@@ -498,9 +502,9 @@ const stations=[
     "imageNote": "Fundortfoto und Historienbild stehen für verschiedene Arten von Quellen. Keines ist ein Augenzeugenbild des Auszugs."
   },
   {
-    "title": "Caesar und der Held Divico",
-    "tag": "PDF 11 · TEXTE UND GESCHICHTSBILDER",
-    "intro": "Ein römischer Feldherr schreibt Geschichte. Jahrhunderte später malt die Schweiz ihre Helden. Vergleiche die beiden Perspektiven, ohne ein Gemälde für ein Augenzeugenbild zu halten.",
+    "title": "Wer darf Geschichte erzählen?",
+    "tag": "SPUR 07 · CAESAR UND DIVICO",
+    "intro": "Funde sprechen nicht von selbst. Ein römischer Sieger schreibt, spätere Künstler malen Helden. Vergleicht diese Stimmen mit dem, was ihr an La Tène gelernt habt: Jede Geschichte entsteht aus einer Auswahl und einer Perspektive.",
     "knowledge": [
       {
         "title": "Zwei Daten, eine Figur",
@@ -563,9 +567,9 @@ const stations=[
     ]
   },
   {
-    "title": "Weiterleben unter Rom",
-    "tag": "PDF 12 & 14 · AVENCHES UND KEMPRATEN",
-    "intro": "Die Niederlage beendete nicht das Leben der Menschen. Verfolge die Veränderungen über Generationen und unterscheide Siedlung, territoriale Gemeinschaft und kulturellen Wandel.",
+    "title": "Nach der Schlacht geht das Leben weiter",
+    "tag": "SPUR 08 · DER WANDEL UNTER ROM",
+    "intro": "Die Geschichte der Menschen endet nicht mit einer Niederlage und auch nicht mit dem Namen einer Epoche. Folgt den Helvetiern in die römische Zeit: nach Aventicum und zu weiteren Vergleichsorten. Welche Dinge und Lebensweisen verändern sich?",
     "knowledge": [
       {
         "title": "Civitas ist mehr als Stadt",
@@ -651,9 +655,9 @@ const stations=[
     ]
   },
   {
-    "title": "Bern: Funde im Film",
-    "tag": "SRF · BEOBACHTEN UND DEUTEN",
-    "intro": "Unter dem heutigen Wald bei Bern lag eine bedeutende Siedlung. Der SRF-Beitrag führt dich an einen Ort, den er den Helvetiern zuordnet. Entdecke seinen Namen, untersuche die Funde und verfolge das Weiterleben unter Rom.",
+    "title": "Den Spuren auf den Grund gehen",
+    "tag": "SPUR 09 · BERN ALS VERGLEICH",
+    "intro": "Wie werden aus Fundstücken Aussagen über Menschen? Der SRF-Film zeigt euch das an Bern. Nehmt die Methode mit zurück nach La Tène: Beobachtung, Rekonstruktion und Vermutung müssen auseinandergehalten werden.",
     "video": true,
     "note": "Ohne Video: Der Beitrag bezeichnet die Siedlung auf der Engehalbinsel als Brenodurum und ihre Bewohner als Helvetier. Eine befestigte keltische Siedlung heisst Oppidum. Im Heiligtum wurden Bärenknochen gefunden; das vermutete Ritual ist eine Deutung. Unter römischer Herrschaft lebte die Bevölkerung weiter; es entwickelte sich eine gallorömische Kultur. Der Film führt nach Bern, nicht nach Neuchâtel. Vergleiche die Methoden: Was wird ausgegraben? Was wird rekonstruiert? Woran erkennt man im Film eine Vermutung? Im Museum am Neuenburgersee kannst du dieselben Fragen stellen.",
     "source": "SRF: Die Kelten und die Römer (2024), 04:01–04:40, 07:09–07:39 und 10:31–11:21; geprüft anhand der deutschen Untertitel.",
@@ -740,9 +744,9 @@ const stations=[
     "imageNote": "Diese Vergleichsbilder stammen nicht aus dem SRF-Film. Die Ausstellung im Laténium zeigt hier die Steinzeit; der Film behandelt dagegen Bern und die Eisenzeit."
   },
   {
-    "title": "Helvetia: ein Land als Frau",
-    "tag": "PDF 13 · ALLEGORIEN LESEN",
-    "intro": "Eine Frau mit Schild verkörpert die Schweiz. Eine andere Helvetia sitzt nachdenklich am Rhein. Was zeigen diese Bilder – und wer oder was wird dabei nicht sichtbar?",
+    "title": "Aus einem Namen wird eine Figur",
+    "tag": "SPUR 10 · HELVETIA UND DIE SCHWEIZ",
+    "intro": "Von den Funden in La Tène führt kein gerader Weg zur heutigen Schweiz. Trotzdem wurde der Name der Helvetier zum Symbol. Untersucht Helvetia als Allegorie: Welche Geschichte über ein Land wird hier sichtbar gemacht?",
     "knowledge": [
       {
         "title": "Was ist eine Allegorie?",
@@ -821,13 +825,13 @@ const stations=[
     ]
   },
   {
-    "title": "Euer Feldheft Neuchâtel",
-    "tag": "VOR ORT ODER MIT DEN BILDERN · WAHLSTATIONEN",
-    "intro": "Nehmt die Fragen mit auf eure Reise. Wählt passende Orte gemeinsam mit der Lehrperson. Ohne Besuch lassen sich dieselben Aufgaben mit den Bildern und offiziellen Museumsseiten bearbeiten.",
+    "title": "Jetzt seid ihr am Zug",
+    "tag": "SPUR 11 · EUER FELDHEFT FÜR LA TÈNE",
+    "intro": "Geht mit euren Fragen an den Neuenburgersee. Am Fundort La Tène, im Laténium und am Neuenburger Republiksdenkmal untersucht ihr drei verschiedene Spuren: einen Ort, seine museale Deutung und ein späteres Bild der Schweiz. Nutzt alternativ die Fotos.",
     "knowledge": [
       {
         "title": "Laténium in Hauterive",
-        "text": "Im Museum und Park begegnen euch Originale, Rekonstruktionen und unterschiedliche Epochen. Das nachgebaute Seeuferhaus im Park gehört zur Bronzezeit, nicht automatisch zur helvetischen Eisenzeit. Haltet bei jedem Objekt Bezeichnung, Datierung, Herkunft und den Status als Original oder Rekonstruktion fest."
+        "text": "Im Museum und Park begegnen euch Originale, Rekonstruktionen und unterschiedliche Epochen. Das nachgebaute Seeuferhaus im Park gehört zur Bronzezeit, nicht automatisch zur helvetischen Eisenzeit. Haltet bei jedem Objekt Bezeichnung, Datierung, Herkunft und den Status als Original oder Rekonstruktion fest. Geht der Frage nach, wie ein Gegenstand von seinem Fundkontext ins Museum gelangt und welche Informationen die Beschriftung bewahrt."
       },
       {
         "title": "La Tène bei Marin-Epagnier",
@@ -842,7 +846,7 @@ const stations=[
         "text": "Die drei Orte sind getrennte Ziele. Die Lehrperson legt Wege, Zeit und Programm fest. Aktuelle Angaben zu Zugang, Öffnung und Gruppenangeboten stehen auf den verlinkten offiziellen Seiten; hier werden keine nicht bestätigten Besuchstermine behauptet. Bilder lassen sich im Spiel vergrössern. Euer Bericht enthält die vor Ort oder am Bild formulierten Beobachtungen."
       }
     ],
-    "note": "Im Museum und Park begegnen euch Originale, Rekonstruktionen und unterschiedliche Epochen. Das nachgebaute Seeuferhaus im Park gehört zur Bronzezeit, nicht automatisch zur helvetischen Eisenzeit. Haltet bei jedem Objekt Bezeichnung, Datierung, Herkunft und den Status als Original oder Rekonstruktion fest. Der Fundort liegt an der Thielle/Zihl am Neuenburgersee. Waffen, Werkzeuge, Schmuck und weitere Funde wurden unterschiedlich gedeutet; religiöse Niederlegungen sind eine wichtige Interpretation. Erfindet vor Ort keine sichtbaren Ruinen. Notiert, was heute tatsächlich zu sehen ist und welche Informationen erst durch Funde und Forschung hinzukommen. Am Rand des Jardin anglais, an der Avenue du Premier-Mars, zeigt das Monument de la République eine Begegnung von Allegorien: Laut Bundesinventar empfängt Helvetia die Republik Neuenburg. Das 1898 eingeweihte Denkmal erinnert an die Republikgründung vom 1. März 1848. Untersucht, wie Blickkontakt, Gesten und Attribute diese politische Beziehung inszenieren. Eine Frauenfigur allein genügt nicht zur Identifikation; Beschriftung und Kontext entscheiden mit. Die drei Orte sind getrennte Ziele. Die Lehrperson legt Wege, Zeit und Programm fest. Aktuelle Angaben zu Zugang, Öffnung und Gruppenangeboten stehen auf den verlinkten offiziellen Seiten; hier werden keine nicht bestätigten Besuchstermine behauptet. Bilder lassen sich im Spiel vergrössern. Euer Bericht enthält die vor Ort oder am Bild formulierten Beobachtungen.",
+    "note": "Im Museum und Park begegnen euch Originale, Rekonstruktionen und unterschiedliche Epochen. Das nachgebaute Seeuferhaus im Park gehört zur Bronzezeit, nicht automatisch zur helvetischen Eisenzeit. Haltet bei jedem Objekt Bezeichnung, Datierung, Herkunft und den Status als Original oder Rekonstruktion fest. Geht der Frage nach, wie ein Gegenstand von seinem Fundkontext ins Museum gelangt und welche Informationen die Beschriftung bewahrt. Der Fundort liegt an der Thielle/Zihl am Neuenburgersee. Waffen, Werkzeuge, Schmuck und weitere Funde wurden unterschiedlich gedeutet; religiöse Niederlegungen sind eine wichtige Interpretation. Erfindet vor Ort keine sichtbaren Ruinen. Notiert, was heute tatsächlich zu sehen ist und welche Informationen erst durch Funde und Forschung hinzukommen. Am Rand des Jardin anglais, an der Avenue du Premier-Mars, zeigt das Monument de la République eine Begegnung von Allegorien: Laut Bundesinventar empfängt Helvetia die Republik Neuenburg. Das 1898 eingeweihte Denkmal erinnert an die Republikgründung vom 1. März 1848. Untersucht, wie Blickkontakt, Gesten und Attribute diese politische Beziehung inszenieren. Eine Frauenfigur allein genügt nicht zur Identifikation; Beschriftung und Kontext entscheiden mit. Die drei Orte sind getrennte Ziele. Die Lehrperson legt Wege, Zeit und Programm fest. Aktuelle Angaben zu Zugang, Öffnung und Gruppenangeboten stehen auf den verlinkten offiziellen Seiten; hier werden keine nicht bestätigten Besuchstermine behauptet. Bilder lassen sich im Spiel vergrössern. Euer Bericht enthält die vor Ort oder am Bild formulierten Beobachtungen.",
     "tasks": [
       {
         "type": "write",
@@ -899,9 +903,9 @@ const stations=[
     ]
   },
   {
-    "title": "Eure Ausstellung",
-    "tag": "NACH DER REISE · WISSEN VERBINDEN",
-    "intro": "Aus Fundstücken, Texten und Bildern wird eine begründete Ausstellung. Verbindet alle Spuren – und zeigt, was ihr sicher wisst und wo Fragen bleiben.",
+    "title": "Was ihr dem See ablest",
+    "tag": "SPUR 12 · EURE GESCHICHTE VON LA TÈNE",
+    "intro": "Kehrt zur ersten Frage zurück: Was verraten uns die Dinge von La Tène – und was erzählen erst Römer, Museen und spätere Bilder? Verbindet eure Beobachtungen zu einer Ausstellung, die ihre Belege und offenen Fragen sichtbar macht.",
     "knowledge": [
       {
         "title": "Was wissen wir über wen?",
@@ -913,10 +917,10 @@ const stations=[
       },
       {
         "title": "Drei Schilder für eure Ausstellung",
-        "text": "Schreibt über ein Objekt aus Neuchâtel, über Caesars Darstellung des Auszugs und über Helvetia als Allegorie. Quellen und Deutungsgrenzen gehören auf jedes Schild. Euer Schlussurteil darf sich durch die Reise verändert haben."
+        "text": "La Tène bildet den Ausgangspunkt eurer Ausstellung. Verbindet ein Objekt oder den Fundort mit Caesars Darstellung und einem Helvetia-Bild. Zeigt bei jeder Verbindung, was belegt ist, was ihr deutet und was offenbleibt. Euer Schlussurteil darf sich durch die Reise verändert haben."
       }
     ],
-    "note": "Die Leitfrage der PDF lautet: Was erfahren wir über die Helvetier selbst, und was über das Bild, das Römer und spätere Schweizer von ihnen zeichneten? Helvetier sind Teil der Geschichte des heutigen Gebiets, aber keine geradlinige Gleichsetzung mit der gesamten heutigen Bevölkerung. La Tène ist ein archäologischer Bezugspunkt, Helvetia eine spätere Allegorie. Zum Weiterlesen nennt die PDF: den HLS-Artikel Helvetier als wissenschaftlichen Einstieg; HLS Kelten für den kulturellen Hintergrund; arCHaeo 2023.3 für neuere Forschungsdiskussion; Caesars Gallischen Krieg, Buch I, als antike Quelle; «Kelten in Zürich», die frei verfügbare 49-seitige Publikation; und das AS-Portal für Fundberichte. Alle Links findet ihr im Quellenfenster. Schreibt über ein Objekt aus Neuchâtel, über Caesars Darstellung des Auszugs und über Helvetia als Allegorie. Quellen und Deutungsgrenzen gehören auf jedes Schild. Euer Schlussurteil darf sich durch die Reise verändert haben.",
+    "note": "Die Leitfrage der PDF lautet: Was erfahren wir über die Helvetier selbst, und was über das Bild, das Römer und spätere Schweizer von ihnen zeichneten? Helvetier sind Teil der Geschichte des heutigen Gebiets, aber keine geradlinige Gleichsetzung mit der gesamten heutigen Bevölkerung. La Tène ist ein archäologischer Bezugspunkt, Helvetia eine spätere Allegorie. Zum Weiterlesen nennt die PDF: den HLS-Artikel Helvetier als wissenschaftlichen Einstieg; HLS Kelten für den kulturellen Hintergrund; arCHaeo 2023.3 für neuere Forschungsdiskussion; Caesars Gallischen Krieg, Buch I, als antike Quelle; «Kelten in Zürich», die frei verfügbare 49-seitige Publikation; und das AS-Portal für Fundberichte. Alle Links findet ihr im Quellenfenster. La Tène bildet den Ausgangspunkt eurer Ausstellung. Verbindet ein Objekt oder den Fundort mit Caesars Darstellung und einem Helvetia-Bild. Zeigt bei jeder Verbindung, was belegt ist, was ihr deutet und was offenbleibt. Euer Schlussurteil darf sich durch die Reise verändert haben.",
     "tasks": [
       {
         "type": "sort",

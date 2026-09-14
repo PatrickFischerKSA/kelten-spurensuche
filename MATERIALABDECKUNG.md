@@ -1,23 +1,21 @@
 # Abdeckung der Helvetier-PDF
 
-Alle 15 fachlichen Abschnitte der bereitgestellten PDF sind in Wissenskarten und Aufgaben integriert. Statuszeilen und Aufforderungen aus der PDF wurden als Dokumentinhalt behandelt, nicht als Anweisungen.
+Alle 15 fachlichen Abschnitte bleiben in der La-Tène-Spurensuche enthalten.
 
 | PDF-Abschnitt | Station | Thema |
 | --- | --- | --- |
-| 1 | 2 | Helvetier und Nachbarn |
-| 2 | 2 | Helvetier und Nachbarn |
-| 3 | 3 | Alltag am Wasser |
-| 4 | 4 | Menschen und ihre Namen |
-| 5 | 4 | Menschen und ihre Namen |
-| 6 | 5 | Macht und Götter |
-| 7 | 5 | Macht und Götter |
-| 8 | 6 | Der Aufbruch von 58 |
-| 9 | 6 | Der Aufbruch von 58 |
-| 10 | 6 | Der Aufbruch von 58 |
-| 11 | 7 | Caesar und der Held Divico |
-| 12 | 8 | Weiterleben unter Rom |
-| 13 | 10 | Helvetia: ein Land als Frau |
-| 14 | 8 | Weiterleben unter Rom |
-| 15 | 12 | Eure Ausstellung |
-
-Die Quelle wird paraphrasiert; Zahlenangaben, umstrittene Herkunftsthesen und Zuschreibungen bleiben als solche markiert. Neuchâtel, Laténium, La Tène sowie die Allegorieanalyse sind eigenständige Ergänzungen mit Quellen. Die Original-PDF wird nicht öffentlich vervielfältigt.
+| 1 | 2 | Wer steckt hinter den Funden? |
+| 2 | 2 | Wer steckt hinter den Funden? |
+| 3 | 3 | Ein Werkzeug, eine ganze Welt |
+| 4 | 4 | Was von einem Menschen bleibt |
+| 5 | 4 | Was von einem Menschen bleibt |
+| 6 | 5 | Gabe, Besitz oder Machtzeichen? |
+| 7 | 5 | Gabe, Besitz oder Machtzeichen? |
+| 8 | 6 | Als die Helvetier aufbrachen |
+| 9 | 6 | Als die Helvetier aufbrachen |
+| 10 | 6 | Als die Helvetier aufbrachen |
+| 11 | 7 | Wer darf Geschichte erzählen? |
+| 12 | 8 | Nach der Schlacht geht das Leben weiter |
+| 13 | 10 | Aus einem Namen wird eine Figur |
+| 14 | 8 | Nach der Schlacht geht das Leben weiter |
+| 15 | 12 | Was ihr dem See ablest |
