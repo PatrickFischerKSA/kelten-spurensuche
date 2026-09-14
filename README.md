@@ -57,19 +57,15 @@ Die Ausblicke auf Helvetier, Bern, Zürich, Rom und Helvetia bleiben Vergleiche 
 
 Browserprüfung: Grabungsablauf inklusive falscher Koordinate, alle 36 Aufgabenhandler, zwölf Aktenstücke, Beweisverbindungen und Speicherung nach Neuladen, Textdownload mit Fundakte, alle zwölf Ansichten bei 390 Pixeln ohne horizontalen Überlauf. JavaScript-Syntax und Fehlerkonsole geprüft.
 
-## Français et déblocage de l’allemand
+## Französisch und Deutsch-Lupe
 
-Das erste Dossier beginnt auf Deutsch. Die übrigen Dossiers sind zunächst Französisch. Eine Einheit entspricht einer Akte mit drei Spuren. Erst wenn alle drei als erfolgreich bearbeitet gelten, wird die folgende Akte auf Deutsch verfügbar. Bei offenen Notizen gilt weiterhin die ausdrücklich bestätigte Gegenprüfung, nicht eine vorgetäuschte automatische Inhaltsbewertung. Falsche Versuche und Teilfortschritte schalten nichts frei. Die erste Akte ist ohne Vorbedingung Deutsch. Andere noch nicht freigeschaltete Akten lassen sich auf Französisch öffnen.
+Alle zwölf Dossiers, alle Aufgaben und die gesamte Oberfläche sind dauerhaft auf Französisch. Deutsch wird ausschliesslich in der Übersetzungslupe angezeigt. Es gibt keine automatische deutsche Sprachfreigabe mehr, auch nicht für das erste Dossier oder durch ältere gespeicherte Freigaben. Antworten, Notizen und Ergebnisse bleiben erhalten. Eigene Texte werden nicht verändert. Originaltitel in Quellenangaben und das deutsche SRF-Video bleiben Originalquellen; das französische Archiv ermöglicht die Bearbeitung ohne Film.
 
-Die Freigaben werden im vorhandenen v7-Spielstand dauerhaft gespeichert. Bereits abgeschlossene Akten zählen mit; Neu beginnen löscht auch die Sprachfreigaben. Spieltexte, Archiv, Bildtexte, Bedienelemente und Rückmeldungen besitzen französische Fassungen. Originaltitel und das verlinkte deutsche SRF-Video bleiben Quellen; eine französische Zusammenfassung ermöglicht die Bearbeitung ohne Video. Texteingaben akzeptieren passende französische und deutsche Begriffe. Eigene Notizen werden nicht übersetzt.
-
-`dist/data-fr.js` und `dist/images-fr.js` enthalten die französischen Inhalte. `scripts/ui-fr.json` ist die bearbeitbare Quelle für `dist/ui-fr.js`. `dist/language.js` steuert Freigaben und Sprache.
-
-Browserprüfung: `PLAYWRIGHT_MODULE=/pfad/zu/playwright node scripts/test-language.cjs` bei laufender Vorschau auf Port 8088; alternativ `GAME_URL` setzen. Prüft Teilfortschritte, Fehler, Abschluss, Wechsel, Speicherung, alle 36 französischen Aufgaben, Notizen, Download, mobile Ansichten, Zurücksetzen und ältere Spielstände.
+`dist/data-fr.js` und `dist/images-fr.js` enthalten die französischen Inhalte. Die deutschen Fassungen liefern nur die Lupenübersetzungen. `scripts/ui-fr.json` ist die bearbeitbare Quelle für `dist/ui-fr.js`.
 
 ## Kurze französische Kommentare
 
-Alle 36 Spuren erhalten nach erfolgreichem Abschluss einen kurzen, inhaltlich passenden Kommentar in einfachem Französisch. Er bleibt auch in freigeschalteten deutschen Einheiten französisch, erscheint beim erneuten Öffnen gelöster Spuren und steht im Download. Bei offenen Notizen erscheint er erst nach der bestätigten Gegenprüfung, ohne automatische Inhaltsbewertung. Beim Bearbeiten oder bei einer falschen Antwort wird kein Erfolgskommentar angezeigt. Die Texte stehen in `dist/comments-fr.js`.
+Alle 36 Spuren erhalten nach erfolgreichem Abschluss einen kurzen, inhaltlich passenden Kommentar in einfachem Französisch. Er bleibt immer französisch, erscheint beim erneuten Öffnen gelöster Spuren und steht im Download. Bei offenen Notizen erscheint er erst nach der bestätigten Gegenprüfung, ohne automatische Inhaltsbewertung. Beim Bearbeiten oder bei einer falschen Antwort wird kein Erfolgskommentar angezeigt. Die Texte stehen in `dist/comments-fr.js`.
 
 ## Deutsch-Lupe
 
@@ -77,4 +73,4 @@ Die Lupe übersetzt den französischen Textabschnitt unter dem Zeiger bzw. beim 
 
 ## Archive
 
-Die aufklappbaren Archive, ihre Bildtexte sowie Bildarchiv und Quellenfenster bleiben unabhängig von der Dossiersprache französisch. Die Deutsch-Lupe übersetzt diese Inhalte bei Bedarf. Der Freischaltungshinweis oberhalb des Dossiers entfällt; die bestehende Sprachfreigabe arbeitet weiter im Hintergrund.
+Die aufklappbaren Archive, ihre Bildtexte sowie Bildarchiv und Quellenfenster bleiben unabhängig von der Dossiersprache französisch. Die Deutsch-Lupe übersetzt diese Inhalte bei Bedarf. Freischaltungshinweise und Sprachwechsel entfallen vollständig.
