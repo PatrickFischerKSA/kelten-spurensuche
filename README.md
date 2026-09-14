@@ -57,11 +57,11 @@ Die Ausblicke auf Helvetier, Bern, Zürich, Rom und Helvetia bleiben Vergleiche 
 
 Browserprüfung: Grabungsablauf inklusive falscher Koordinate, alle 36 Aufgabenhandler, zwölf Aktenstücke, Beweisverbindungen und Speicherung nach Neuladen, Textdownload mit Fundakte, alle zwölf Ansichten bei 390 Pixeln ohne horizontalen Überlauf. JavaScript-Syntax und Fehlerkonsole geprüft.
 
-## Französisch und Deutsch-Lupe
+## Sprachen
 
-Alle zwölf Dossiers, alle Aufgaben und die gesamte Oberfläche sind dauerhaft auf Französisch. Deutsch wird ausschliesslich in der Übersetzungslupe angezeigt. Es gibt keine automatische deutsche Sprachfreigabe mehr, auch nicht für das erste Dossier oder durch ältere gespeicherte Freigaben. Antworten, Notizen und Ergebnisse bleiben erhalten. Eigene Texte werden nicht verändert. Originaltitel in Quellenangaben und das deutsche SRF-Video bleiben Originalquellen; das französische Archiv ermöglicht die Bearbeitung ohne Film.
+Rahmentexte, Navigation, Bilder und Archive sind Französisch und mit der Deutsch-Lupe übersetzbar. Die Aufgabenlogik ist von Beginn an Deutsch: Fragen, Arbeitsanweisungen, Eingaben, Zuordnungskarten, Fundnamen, Fundbeschreibungen, Rückmeldungen und Gegenprüfung. Auch die Fundakte und die Schlussdeutung werden auf Deutsch bearbeitet. Die kurzen Erfolgskommentare bleiben Französisch. Ein französisches Archiv innerhalb einer deutschen Aufgabenkarte bleibt ausdrücklich Französisch.
 
-`dist/data-fr.js` und `dist/images-fr.js` enthalten die französischen Inhalte. Die deutschen Fassungen liefern nur die Lupenübersetzungen. `scripts/ui-fr.json` ist die bearbeitbare Quelle für `dist/ui-fr.js`.
+Es gibt keine automatische Sprachfreischaltung. Ältere Spielstände, Antworten und Notizen bleiben erhalten. Die Lösungen und Aufgabenpositionen sind unverändert; deutsche und französische Eingaben bleiben zulässig. Die Sprachen gelten pro Textbereich, nicht pro Dossier. `data-content-language="de"` kennzeichnet Aufgabenbereiche, `data-archive-fr` die französischen Archive.
 
 ## Kurze französische Kommentare
 

@@ -1,4 +1,4 @@
-/* French game text; authored German translations are available only through the lens. */
+/* French narrative and archives; German task instructions, finds and reasoning. */
 let gameLanguage='fr';
 const stationsDE=stations;
 const imageArchiveDE=imageArchive;
@@ -9,22 +9,23 @@ const uiPattern=new RegExp(Object.keys(uiFR).sort((a,b)=>b.length-a.length).map(
 function tr(text,language=gameLanguage){return language==='fr'?String(text).replace(uiPattern,m=>uiFR[m]):String(text);}
 function syncLanguage(){
  gameLanguage='fr';
- stations=stationsFR;
+ stations=stationsFR.map((s,i)=>({...s,tasks:stationsDE[i].tasks,reward:stationsDE[i].reward}));
  imageArchive=imageArchiveFR;
  document.documentElement.lang='fr-CH';
  document.title='La Tène – Sous la surface';
 }
+function contentLanguage(el){const scope=el?.closest('[data-archive-fr],[data-content-language]');return scope?.hasAttribute('data-archive-fr')?'fr':scope?.dataset.contentLanguage||gameLanguage;}
 function localizeDOM(){
  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
  let node;
  while(node=walker.nextNode()){
   if(node.parentElement?.closest('script,style,textarea,[data-user-text],[data-fixed-language]'))continue;
   const old=translatedNodes.get(node),raw=old&&old.output===node.data?old.raw:node.data;
-  const output=tr(raw,node.parentElement?.closest('[data-archive-fr]')?'fr':gameLanguage);if(node.data!==output)node.data=output;translatedNodes.set(node,{raw,output});
+  const output=tr(raw,contentLanguage(node.parentElement));if(node.data!==output)node.data=output;translatedNodes.set(node,{raw,output});
  }
  document.querySelectorAll('[aria-label],[placeholder],[title],[alt]').forEach(el=>{
   if(el.closest('[data-fixed-language]'))return;let saved=translatedAttributes.get(el)||{};
-  for(const attr of ['aria-label','placeholder','title','alt']){if(!el.hasAttribute(attr))continue;const value=el.getAttribute(attr),old=saved[attr],raw=old&&old.output===value?old.raw:value,output=tr(raw,el.closest('[data-archive-fr]')?'fr':gameLanguage);if(value!==output)el.setAttribute(attr,output);saved[attr]={raw,output};}translatedAttributes.set(el,saved);
+  for(const attr of ['aria-label','placeholder','title','alt']){if(!el.hasAttribute(attr))continue;const value=el.getAttribute(attr),old=saved[attr],raw=old&&old.output===value?old.raw:value,output=tr(raw,contentLanguage(el));if(value!==output)el.setAttribute(attr,output);saved[attr]={raw,output};}translatedAttributes.set(el,saved);
  });
 }
 function languageBanner(){
@@ -32,7 +33,7 @@ function languageBanner(){
  document.querySelectorAll('.nav-language').forEach(el=>el.remove());
 }
 function localizedReport(){
- const isFR=gameLanguage==='fr',lines=[document.title,isFR?'DOSSIER DE FOUILLE':'FUNDAKTE',''];
+ const isFR=false,lines=[document.title,isFR?'DOSSIER DE FOUILLE':'FUNDAKTE',''];
  for(const [i,s]of stations.entries()){
   lines.push(`${i+1}. ${s.title}`);
   s.tasks.forEach((t,j)=>{const a=state.answers[`${i}-${j}`]||[];lines.push(t.q);if(t.type==='write')lines.push(...t.prompts.map((p,k)=>p+': '+(a[k]||'—')));else if(t.type==='dig')lines.push(...t.finds.map((f,k)=>f.name+': '+(a[k]==='recorded'?(isFR?'position documentée, objet sauvegardé':'Lage dokumentiert, Fund gesichert'):'—')));else lines.push(a.length?formatAnswer(t,a):'—');if(state.results[`${i}-${j}`]?.correct)lines.push('Un petit mot… '+taskCommentsFR[i][j]);lines.push('');});
@@ -50,7 +51,7 @@ function initLanguage(){
  const originalRender=render;render=function(){syncLanguage();originalRender();languageBanner();localizeDOM();document.documentElement.classList.remove('language-loading');if(typeof refreshLens==='function')refreshLens();};
  const originalSidebar=sidebar;sidebar=function(){syncLanguage();originalSidebar();localizeDOM();};
  const originalComplete=complete;complete=function(correct,self=false){originalComplete(correct,self);languageBanner();localizeDOM();};
- const originalResult=renderResult;renderResult=function(){originalResult();document.querySelector('#download').onclick=localizedReport;localizeDOM();};
+ const originalResult=renderResult;renderResult=function(){originalResult();document.querySelectorAll('#game>section,#game>.review-list').forEach(el=>{el.dataset.contentLanguage='de';el.lang='de';});document.querySelector('#download').onclick=localizedReport;localizeDOM();};
  // Dynamic feedback, image dialogs and keyboard-operated controls keep the active locale.
  new MutationObserver(()=>localizeDOM()).observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['aria-label','placeholder','title','alt']});
  syncLanguage();save();initLens();
