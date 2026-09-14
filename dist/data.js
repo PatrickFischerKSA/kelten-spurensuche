@@ -1,5 +1,5 @@
 const SRF="https://www.srf.ch/play/tv/roemer-in-der-schweiz/video/die-kelten-und-die-roemer?urn=urn:srf:video:3da18acb-1a0a-4cab-97ce-0b0fb3f4f4e4";
-const stations=[
+let stations=[
   {
     "title": "Etwas steckt im Schlamm",
     "tag": "AKT I · BERGEN",

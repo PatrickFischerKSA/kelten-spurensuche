@@ -56,3 +56,13 @@ Die Ausblicke auf Helvetier, Bern, Zürich, Rom und Helvetia bleiben Vergleiche 
 ## Prüfung der Spielfassung
 
 Browserprüfung: Grabungsablauf inklusive falscher Koordinate, alle 36 Aufgabenhandler, zwölf Aktenstücke, Beweisverbindungen und Speicherung nach Neuladen, Textdownload mit Fundakte, alle zwölf Ansichten bei 390 Pixeln ohne horizontalen Überlauf. JavaScript-Syntax und Fehlerkonsole geprüft.
+
+## Français et déblocage de l’allemand
+
+Das Spiel beginnt auf Französisch. Eine Einheit entspricht einer Akte mit drei Spuren. Erst wenn alle drei als erfolgreich bearbeitet gelten, wird die folgende Akte auf Deutsch verfügbar. Bei offenen Notizen gilt weiterhin die ausdrücklich bestätigte Gegenprüfung, nicht eine vorgetäuschte automatische Inhaltsbewertung. Falsche Versuche und Teilfortschritte schalten nichts frei. Die erste Akte bleibt Französisch. Andere noch nicht freigeschaltete Akten lassen sich auf Französisch öffnen.
+
+Die Freigaben werden im vorhandenen v7-Spielstand dauerhaft gespeichert. Bereits abgeschlossene Akten zählen mit; Neu beginnen löscht auch die Sprachfreigaben. Spieltexte, Archiv, Bildtexte, Bedienelemente und Rückmeldungen besitzen französische Fassungen. Originaltitel und das verlinkte deutsche SRF-Video bleiben Quellen; eine französische Zusammenfassung ermöglicht die Bearbeitung ohne Video. Texteingaben akzeptieren passende französische und deutsche Begriffe. Eigene Notizen werden nicht übersetzt.
+
+`dist/data-fr.js` und `dist/images-fr.js` enthalten die französischen Inhalte. `scripts/ui-fr.json` ist die bearbeitbare Quelle für `dist/ui-fr.js`. `dist/language.js` steuert Freigaben und Sprache.
+
+Browserprüfung: `PLAYWRIGHT_MODULE=/pfad/zu/playwright node scripts/test-language.cjs` bei laufender Vorschau auf Port 8088; alternativ `GAME_URL` setzen. Prüft Teilfortschritte, Fehler, Abschluss, Wechsel, Speicherung, alle 36 französischen Aufgaben, Notizen, Download, mobile Ansichten, Zurücksetzen und ältere Spielstände.
