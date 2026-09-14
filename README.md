@@ -66,3 +66,7 @@ Die Freigaben werden im vorhandenen v7-Spielstand dauerhaft gespeichert. Bereits
 `dist/data-fr.js` und `dist/images-fr.js` enthalten die französischen Inhalte. `scripts/ui-fr.json` ist die bearbeitbare Quelle für `dist/ui-fr.js`. `dist/language.js` steuert Freigaben und Sprache.
 
 Browserprüfung: `PLAYWRIGHT_MODULE=/pfad/zu/playwright node scripts/test-language.cjs` bei laufender Vorschau auf Port 8088; alternativ `GAME_URL` setzen. Prüft Teilfortschritte, Fehler, Abschluss, Wechsel, Speicherung, alle 36 französischen Aufgaben, Notizen, Download, mobile Ansichten, Zurücksetzen und ältere Spielstände.
+
+## Kurze französische Kommentare
+
+Alle 36 Spuren erhalten nach erfolgreichem Abschluss einen kurzen, inhaltlich passenden Kommentar in einfachem Französisch. Er bleibt auch in freigeschalteten deutschen Einheiten französisch, erscheint beim erneuten Öffnen gelöster Spuren und steht im Download. Bei offenen Notizen erscheint er erst nach der bestätigten Gegenprüfung, ohne automatische Inhaltsbewertung. Beim Bearbeiten oder bei einer falschen Antwort wird kein Erfolgskommentar angezeigt. Die Texte stehen in `dist/comments-fr.js`.

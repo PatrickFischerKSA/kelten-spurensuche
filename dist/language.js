@@ -18,12 +18,12 @@ function localizeDOM(){
  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
  let node;
  while(node=walker.nextNode()){
-  if(node.parentElement?.closest('script,style,textarea,[data-user-text]'))continue;
+  if(node.parentElement?.closest('script,style,textarea,[data-user-text],[data-fixed-language]'))continue;
   const old=translatedNodes.get(node),raw=old&&old.output===node.data?old.raw:node.data;
   const output=tr(raw);if(node.data!==output)node.data=output;translatedNodes.set(node,{raw,output});
  }
  document.querySelectorAll('[aria-label],[placeholder],[title],[alt]').forEach(el=>{
-  let saved=translatedAttributes.get(el)||{};
+  if(el.closest('[data-fixed-language]'))return;let saved=translatedAttributes.get(el)||{};
   for(const attr of ['aria-label','placeholder','title','alt']){if(!el.hasAttribute(attr))continue;const value=el.getAttribute(attr),old=saved[attr],raw=old&&old.output===value?old.raw:value,output=tr(raw);if(value!==output)el.setAttribute(attr,output);saved[attr]={raw,output};}translatedAttributes.set(el,saved);
  });
 }
@@ -43,7 +43,7 @@ function localizedReport(){
  const isFR=gameLanguage==='fr',lines=[document.title,isFR?'DOSSIER DE FOUILLE':'FUNDAKTE',''];
  for(const [i,s]of stations.entries()){
   lines.push(`${i+1}. ${s.title} [${germanAvailable(i)?'DE':'FR'}]`);
-  s.tasks.forEach((t,j)=>{const a=state.answers[`${i}-${j}`]||[];lines.push(t.q);if(t.type==='write')lines.push(...t.prompts.map((p,k)=>p+': '+(a[k]||'—')));else if(t.type==='dig')lines.push(...t.finds.map((f,k)=>f.name+': '+(a[k]==='recorded'?(isFR?'position documentée, objet sauvegardé':'Lage dokumentiert, Fund gesichert'):'—')));else lines.push(a.length?formatAnswer(t,a):'—');lines.push('');});
+  s.tasks.forEach((t,j)=>{const a=state.answers[`${i}-${j}`]||[];lines.push(t.q);if(t.type==='write')lines.push(...t.prompts.map((p,k)=>p+': '+(a[k]||'—')));else if(t.type==='dig')lines.push(...t.finds.map((f,k)=>f.name+': '+(a[k]==='recorded'?(isFR?'position documentée, objet sauvegardé':'Lage dokumentiert, Fund gesichert'):'—')));else lines.push(a.length?formatAnswer(t,a):'—');if(state.results[`${i}-${j}`]?.correct)lines.push('Un petit mot… '+taskCommentsFR[i][j]);lines.push('');});
  }
  lines.push(isFR?'NOTRE HYPOTHÈSE':'UNSERE VERMUTUNG',board.hypothesis||state.answers['0-2']?.[0]||'—','');
  const labels=isFR?{supports:'soutient',challenges:'contredit ou limite',open:'question ouverte'}:{supports:'stützt',challenges:'begrenzt / widerspricht',open:'offene Frage'};
