@@ -248,6 +248,7 @@ let stations=[
       {
         "type": "write",
         "q": "Sucht auf dem Uferbild einen möglichen Verkehrsweg. Was würde er für eure Funde erklären?",
+        "image": "neuchatel",
         "prompts": [
           "Zwei mögliche Vorteile des Wassers oder der Lage",
           "Eine Grenze deiner Deutung aus dem heutigen Bild"
