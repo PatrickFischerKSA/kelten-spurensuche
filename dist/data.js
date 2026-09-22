@@ -130,7 +130,7 @@ let stations=[
       },
       {
         "type": "sort",
-        "q": "Zwei ähnliche Schmuckstücke. Drei mögliche Geschichten. Trennt das Denkbare vom vorschnellen Schluss.",
+        "q": "Gedankenexperiment: Zwei Schmuckstücke haben eine ähnliche Form. Prüft die folgenden Erklärungen und trennt das Denkbare vom vorschnellen Schluss.",
         "items": [
           "Die Form könnte durch Handel verbreitet worden sein.",
           "Menschen könnten gewandert sein.",
@@ -591,6 +591,7 @@ let stations=[
       {
         "type": "number",
         "q": "Das Gemälde führt zu einem älteren Sieg bei Agen. Findet dessen Jahr vor Christus in der Akte.",
+        "images": ["gleyre"],
         "label": "Jahr vor Christus",
         "answer": 107,
         "why": "107 v. Chr. gehört zur Überlieferung des Tiguriner-Sieges bei Agen. Das ist nicht die Niederlage der Helvetier bei Bibracte 58 v. Chr."
@@ -598,6 +599,7 @@ let stations=[
       {
         "type": "write",
         "q": "Das Bild sieht wie ein Augenzeugenbericht aus. Sucht zwei Details, die einen Triumph inszenieren.",
+        "images": ["gleyre"],
         "prompts": [
           "Zwei sichtbare Mittel, mit denen Sieg oder Unterlegenheit inszeniert werden",
           "Was erzählt das Bild eher über die spätere Schweiz als über die Antike?"
@@ -843,6 +845,7 @@ let stations=[
       {
         "type": "letters",
         "q": "Die Frau ist kein Porträt. Entschlüsselt den Begriff für eine Figur, die eine Idee sichtbar macht.",
+        "images": ["helvetia-coin"],
         "letters": [
           "L",
           "E",
@@ -860,6 +863,7 @@ let stations=[
       {
         "type": "write",
         "q": "Zwei Helvetias, zwei Auftritte. Was hat sich zwischen Münze und Reisender verändert?",
+        "images": ["helvetia-coin", "helvetia-basel-detail"],
         "prompts": [
           "Was erkennst du bei Körperhaltung und Gegenständen?",
           "Welche unterschiedlichen Schweizbilder deutest du daraus?",
@@ -875,6 +879,7 @@ let stations=[
       {
         "type": "write",
         "q": "Gebt Helvetia drei neue Gegenstände. Welche Schweiz würde sie damit erzählen?",
+        "images": ["helvetia-coin", "helvetia-basel-detail"],
         "prompts": [
           "Welche drei Attribute oder Gegenstände würdest du ihr geben – und warum?",
           "Wessen Perspektive soll sichtbar werden, die im klassischen Bild leicht fehlt?"
@@ -928,6 +933,7 @@ let stations=[
       {
         "type": "write",
         "q": "Nehmt eine eigene Spur in die Akte auf: ein Museumsobjekt oder ein Bild aus dem Archiv.",
+        "images": ["fibula", "torc", "helvetii-coin"],
         "prompts": [
           "Name, Ort und Datierung (oder ausdrücklich: unbekannt)",
           "Drei sichtbare Merkmale und der Status: Original, Rekonstruktion oder heutige Fotografie",
@@ -943,6 +949,7 @@ let stations=[
       {
         "type": "write",
         "q": "Lest das Ufer. Wo würde eure erste Vermutung zur Landschaft passen – und wo wird sie unsicher?",
+        "images": ["neuchatel"],
         "prompts": [
           "Was siehst du heute?",
           "Welche Möglichkeiten könnte das Wasser früher für Verkehr oder Siedlung geboten haben?",
@@ -958,6 +965,7 @@ let stations=[
       {
         "type": "write",
         "q": "Zwei Frauen am Denkmal: Entschlüsselt, wer wen empfängt und warum.",
+        "images": ["republique"],
         "prompts": [
           "Was zeigen Blickrichtung, Gesten und Gegenstände der beiden stehenden Figuren?",
           "Helvetia empfängt die Republik Neuenburg: Welche politische Beziehung stellt das Bild damit her?",
@@ -1032,6 +1040,7 @@ let stations=[
       {
         "type": "write",
         "q": "Schreibt die Bildunterschrift eurer Schlussakte: Was verbinden La Tène, Caesar und Helvetia wirklich?",
+        "images": ["la-tene", "gleyre", "helvetia-coin"],
         "prompts": [
           "Schreibe 4–6 Sätze mit einem Beispiel aus Neuchâtel, einem aus der antiken Überlieferung und einem aus der Helvetia-Bildsprache."
         ],
