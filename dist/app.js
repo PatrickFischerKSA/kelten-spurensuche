@@ -7,6 +7,16 @@ try{const raw=localStorage.getItem(KEY);const saved=raw?JSON.parse(raw):null;if(
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch{storageOK=false;}}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function normalize(s){return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ß/g,'ss').replace(/ae/g,'a').replace(/oe/g,'o').replace(/ue/g,'u').replace(/[^a-z0-9]/g,'');}
+function answerForm(value){return String(value).trim().toLowerCase().replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/g,'');}
+// One insertion, deletion, replacement or adjacent transposition is a small typo.
+function smallTypo(a,b){
+ if(a===b)return true;
+ if(Math.min(a.length,b.length)<5||Math.abs(a.length-b.length)>1)return false;
+ let i=0;while(i<Math.min(a.length,b.length)&&a[i]===b[i])i++;
+ if(a.length===b.length)return a.slice(i+1)===b.slice(i+1)||(a[i]===b[i+1]&&a[i+1]===b[i]&&a.slice(i+2)===b.slice(i+2));
+ return a.length>b.length?a.slice(i+1)===b.slice(i):a.slice(i)===b.slice(i+1);
+}
+function acceptsAnswer(field,value){if(/\b(nicht|kein(?:e|en|er|es|em)?|nein|pas|non|jamais|ohne|oder|ou)\b/i.test(value))return false;const answer=answerForm(value);return !!answer&&field.accept.some(alias=>smallTypo(answer,answerForm(alias)));}
 const key=()=>`${state.station}-${state.task}`;
 const currentStation=()=>stations[state.station];
 const current=()=>currentStation().tasks[state.task];
@@ -45,14 +55,14 @@ function complete(correct,self=false){const prev=state.results[key()];state.resu
 function check(){const t=current();let valid=true,correct=false;
  if(t.type==='dig'){const done=t.finds.every((f,i)=>selection[i]==='recorded');if(done){complete(true,true);$('#feedback').innerHTML='<div class="feedback"><strong>Fundkontext gesichert.</strong><p>'+t.why+'</p></div>';$('#check').disabled=true;}else $('#feedback').innerHTML='<p>Legt erst alle drei Funde frei, zeichnet ihre Lage ein und sichert sie dann.</p>';return;}
  if(t.type==='write'){valid=t.prompts.every((_,i)=>String(selection[i]||'').trim().length>=12);if(valid){$('#feedback').innerHTML=`<div class="feedback"><strong>Hält eure Notiz den Spuren stand?</strong><p>${t.why}</p><div class="rubric">${t.criteria.map((c,i)=>`<label><input type="checkbox" data-criterion="${i}">${c}</label>`).join('')}</div><p class="small">Bestätige nur Kriterien, die dein Text tatsächlich erfüllt. Du kannst ihn oben weiterbearbeiten.</p><button class="primary" id="selfDone" disabled>Notiz in die Akte legen</button></div>`;document.querySelectorAll('[data-criterion]').forEach(b=>b.onchange=()=>{$('#selfDone').disabled=![...document.querySelectorAll('[data-criterion]')].every(c=>c.checked);});$('#selfDone').onclick=()=>{complete(true,true);$('#selfDone').disabled=true;$('#selfDone').textContent='Notiz abgelegt';};return;}}
- else if(t.type==='text'){valid=t.fields.every((_,i)=>String(selection[i]||'').trim());correct=t.fields.every((f,i)=>f.accept.some(a=>normalize(a)===normalize(selection[i]||'')));}
+ else if(t.type==='text'){valid=t.fields.every((_,i)=>String(selection[i]||'').trim());correct=t.fields.every((f,i)=>acceptsAnswer(f,selection[i]||''));}
  else if(t.type==='number'){valid=String(selection[0]||'').trim()!=='';correct=Number(selection[0])===t.answer;}
  else if(t.type==='letters'){valid=selection.length===t.letters.length;correct=selection.map(i=>t.letters[i]).join('')===t.answer;}
  else if(t.type==='order'){correct=JSON.stringify(order)===JSON.stringify(t.answer);}
  else if(t.type==='mark'){valid=selection.length>0;correct=JSON.stringify([...selection].sort((a,b)=>a-b))===JSON.stringify(t.answer);}
  else{valid=t.items.every((_,i)=>Number.isInteger(selection[i]));correct=JSON.stringify(selection)===JSON.stringify(t.answer);}
  if(!valid){$('#feedback').innerHTML=`<p role="status">${t.type==='write'?'Bitte formuliere zu jedem Feld einen kurzen Gedanken (mindestens 12 Zeichen). Das ist nur eine Eingabeprüfung, keine Bewertung.':'Bitte vervollständige zuerst deine Lösung.'}</p>`;return;}
- complete(correct);$('#feedback').innerHTML=`<div class="feedback ${correct?'':'wrong'}"><strong>${correct?'Spur entschlüsselt!':'Noch nicht ganz.'}</strong><p>${t.why}</p>${!correct&&t.type==='text'?`<p>Gesuchte Begriffe: ${t.fields.map(f=>f.accept[0]).join(' · ')}</p>`:''}${correct?'':'<p>Überarbeite deine Lösung mit diesem Hinweis und prüfe sie erneut.</p>'}</div>`;$('#check').disabled=true;
+ complete(correct);$('#feedback').innerHTML=`<div class="feedback ${correct?'':'wrong'}"><strong>${correct?'Spur entschlüsselt!':'Noch nicht ganz.'}</strong><p>${t.why}</p>${!correct&&t.type==='text'?t.fields.map((f,i)=>`<p>${esc(f.label)}: ${acceptsAnswer(f,selection[i]||'')?'Richtig.':`Hier ist ${esc(f.accept[0])} gemeint.`}</p>`).join(''):''}${correct?'':'<p>Überarbeite deine Lösung mit diesem Hinweis und prüfe sie erneut.</p>'}</div>`;$('#check').disabled=true;
 }
 function next(){if(state.task<currentStation().tasks.length-1){start(state.station,state.task+1);$('#taskArea').scrollIntoView({block:'start'});}else if(state.station<stations.length-1)start(state.station+1);else{showResult=true;render();$('#game').focus();}}
 function renderResult(){const points=Object.values(state.results).filter(r=>r.first).length,solved=Object.values(state.results).filter(r=>r.correct).length;

@@ -343,7 +343,7 @@ let stations=[
             "label": "In welcher Stadt wurde das genannte Gefäss gefunden?",
             "accept": [
               "Mantua",
-              "Mantova"
+            "Mantova", "in Mantua", "in Mantova", "Mantua in Norditalien", "Mantua in Italien", "Mantoue", "à Mantoue"
             ]
           },
           {
@@ -351,7 +351,7 @@ let stations=[
             "accept": [
               "etruskische",
               "etruskisch",
-              "etruskischen"
+            "etruskischen", "etruskischer", "etruskisches", "etruskische Buchstaben", "etruskischen Buchstaben", "mit etruskischen Buchstaben", "etruskische Schrift", "etruskischen Schrift", "in etruskischer Schrift", "etruskisches Alphabet", "Etruskeralphabet", "alphabet étrusque", "caractères étrusques", "écriture étrusque"
             ]
           }
         ],
@@ -524,14 +524,14 @@ let stations=[
             "accept": [
               "Saintonge",
               "Santonen",
-              "Gebiet der Santonen"
+            "Gebiet der Santonen", "Land der Santonen", "bei den Santonen", "zu den Santonen", "ins Gebiet der Santonen", "in die Saintonge", "la Saintonge", "chez les Santons"
             ]
           },
           {
             "label": "Ort der entscheidenden Niederlage",
             "accept": [
               "Bibracte",
-              "bei Bibracte"
+            "bei Bibracte", "Schlacht bei Bibracte", "in Bibracte", "Bibrakte", "bataille de Bibracte"
             ]
           }
         ],
@@ -675,7 +675,7 @@ let stations=[
           {
             "label": "Antiker Name von Avenches",
             "accept": [
-              "Aventicum"
+            "Aventicum", "Aventicum (Avenches)", "Aventicum / Avenches", "Avenches / Aventicum", "der Hauptort Aventicum"
             ]
           },
           {
@@ -683,7 +683,7 @@ let stations=[
             "accept": [
               "gallorömisch",
               "galloroemisch",
-              "gallorömische"
+            "gallorömische", "gallorömischen", "gallorömischer", "gallorömisches", "gallo-römische Kultur", "gallo-römisch", "keltisch-römisch", "keltisch-römische Kultur", "gallo-romaine", "culture gallo-romaine"
             ]
           }
         ],
@@ -741,14 +741,14 @@ let stations=[
             "label": "Wie nennt der Film diese Siedlung?",
             "accept": [
               "Brenodurum",
-              "Brenodor"
+            "Brenodor", "Brenodur", "Brenodurum auf der Engehalbinsel", "Brenodor auf der Engehalbinsel", "Oppidum Brenodurum", "Oppidum Brenodor"
             ]
           },
           {
             "label": "Wie heisst der Fachbegriff für eine befestigte keltische Siedlung?",
             "accept": [
               "Oppidum",
-              "ein Oppidum"
+            "ein Oppidum", "keltisches Oppidum", "befestigtes Oppidum", "Oppida", "befestigte keltische Siedlung", "befestigte Siedlung", "befestigte Stadt", "ville fortifiée", "habitat fortifié"
             ]
           }
         ],
@@ -790,7 +790,7 @@ let stations=[
               "galloroemische",
               "gallo-römische",
               "gallorömisch",
-              "gallorömische Kultur"
+            "gallorömische Kultur", "gallorömischen", "gallorömischer", "gallorömisches", "keltisch-römisch", "keltisch-römische", "keltisch-römische Kultur", "culture gallo-romaine", "die gallorömische Kultur", "eine gallorömische Kultur"
             ]
           }
         ],
